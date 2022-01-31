@@ -3,9 +3,9 @@ description: Runs linting, code coverage, and build
 runs:
   using: "composite"
   steps:
-    - run: npm install
+    - run: npm ci
       shell: bash
-    - run: npm run test
+    - run: CI=true npm test -- --coverage
       shell: bash
     - run: npm run build
       shell: bash
