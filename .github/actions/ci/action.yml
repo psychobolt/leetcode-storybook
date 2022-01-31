@@ -3,6 +3,8 @@ description: Runs linting, code coverage, and build
 runs:
   using: "composite"
   steps:
+    - run: npm install
+      shell: bash
     - run: npm run test
       shell: bash
     - run: npm run build
