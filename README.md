@@ -1,6 +1,4 @@
-<center>
-  <img src="https://raw.githubusercontent.com/psychobolt/leetcode-storybook/master/logo.png" />
-</center>
+![main_logo](https://raw.githubusercontent.com/psychobolt/leetcode-storybook/master/logo.png)
 
 # LeetCode Storybook
 
