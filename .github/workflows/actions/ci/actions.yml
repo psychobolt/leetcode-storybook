@@ -1,0 +1,9 @@
+name: Continuous Integration
+description: Runs linting, code coverage, and build
+runs:
+  using: "composite"
+  steps:
+    - run: npm run test
+      shell: bash
+    - run: npm run build
+      shell: bash
