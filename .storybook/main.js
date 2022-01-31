@@ -1,8 +1,7 @@
+const { getStories } = require('./utils');
+
 module.exports = {
-  stories: [
-    '../(stories|src)/**/*.stories.mdx',
-    '../src/**/*.stories.@(js|jsx|ts|tsx)',
-  ],
+  stories: getStories(['../src']),
   addons: [
     '@storybook/addon-links',
     {
