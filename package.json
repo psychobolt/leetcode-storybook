@@ -15,7 +15,8 @@
     "start": "start-storybook -p 6006",
     "build": "build-storybook",
     "test": "react-scripts test --passWithNoTests",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "codecov": "codecov"
   },
   "eslintConfig": {
     "extends": [
@@ -54,6 +55,7 @@
     "@storybook/node-logger": "^6.4.16",
     "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.16",
+    "codecov": "^3.8.3",
     "webpack": "^5.67.0"
   }
 }

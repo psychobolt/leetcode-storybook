@@ -7,5 +7,7 @@ runs:
       shell: bash
     - run: CI=true npm test -- --coverage
       shell: bash
+    - run: npm run codecov
+      shell: bash
     - run: npm run build
       shell: bash

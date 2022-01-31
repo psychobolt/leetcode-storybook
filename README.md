@@ -2,6 +2,9 @@
 
 # LeetCode Storybook
 
+[![Main workflow](https://github.com/psychobolt/leetcode-storybook/actions/workflows/main.yml/badge.svg)](https://github.com/psychobolt/eetcode-storybook/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/psychobolt/eetcode-storybook/branch/master/graph/badge.svg?flag=react-rollup-boilerplate)](https://codecov.io/gh/psychobolt/eetcode-storybook/tree/master/src)
+
 A list of solved and curated LeetCode problems with solutions in ES5 and ES6 within a sandbox.
 
 ## Motivation
