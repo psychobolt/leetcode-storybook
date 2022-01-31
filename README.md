@@ -6,7 +6,7 @@ A list of solved and curated LeetCode problems with solutions in ES5 and ES6 wit
 
 ## Motivation
 
-Many people with software industry and computer science backgrounds would probably know that mastering and learning to code is similiar to a art form. There is no one correct or best way to study or learn how to code, but we all wish to become confident in our problem solving abilities of tacking various challenging problems efficiently. Thus, having a background framework of fundamental algorithms and data sturctures would be ever useful. The chapters of the book will provide sample code of data structures, as well as link sample problems than could be derived.
+Many people with software industry and computer science backgrounds would probably know that mastering and learning to code is similiar to a art form. There is no one correct or best way to study or learn how to code, but we all wish to become confident in our problem solving abilities of tackling various challenging problems efficiently. Thus, having a background framework of fundamental algorithms and data sturctures would be ever useful. The chapters of the book will provide sample code of data structures, as well as link sample problems than could be derived.
 
 Initially my goal was to study a selected of core interview coding questions that would be asked of candidates in various software companies. I find that sharing this sandbox with documented problems and solutions would be useful, not only for my goals but for anyone who is mastering their coding journey. 
 
