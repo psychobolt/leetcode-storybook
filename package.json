@@ -14,7 +14,7 @@
   "scripts": {
     "start": "start-storybook -p 3000",
     "build": "build-storybook",
-    "test": "react-scripts test --passWithNoTests",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "codecov": "codecov"
   },
@@ -33,6 +33,17 @@
         }
       }
     ]
+  },
+  "jest": {
+    "coveragePathIgnorePatterns": ["/node_modules/", "index.js"],
+    "coverageThreshold": {
+      "./src/**/*.js": {
+        "statements": 95,
+        "branches": 95,
+        "functions": 100,
+        "lines": 95
+      }
+    }
   },
   "browserslist": {
     "production": [

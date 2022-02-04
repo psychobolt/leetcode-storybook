@@ -1,0 +1,32 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
+
+import SinglyLinkedList_ES5 from './singlyLinkedList.es5.js';
+import es5solution from '!!raw-loader!./singlyLinkedList.es5.js';
+import runTestCase, { cases } from './testCases';
+
+export const case1 = cases[0];
+
+<Meta id="singly-linked-list-01" title="Linked List/Singly Linked List/Implementation" />
+
+# Singly Linked List Implementation
+
+See [card](https://leetcode.com/explore/learn/card/linked-list/209/singly-linked-list/1290/).
+
+## ES5
+
+<Canvas>
+  <Story name="ES5" parameters={{ docs: { source: { code: es5solution } }}}>
+    <div>
+      <label>Input: </label>
+      <span>{JSON.stringify(case1.commands)}</span>
+    </div>
+    <div>
+      <label>Output: </label>
+      <span>{JSON.stringify(runTestCase(SinglyLinkedList_ES5, case1))}</span>
+    </div>
+  </Story>
+</Canvas>
+
+## ES6
+
+Coming Soon
