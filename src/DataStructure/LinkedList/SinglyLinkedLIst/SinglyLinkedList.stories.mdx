@@ -1,6 +1,6 @@
 import { Meta, Canvas, Story } from '@storybook/addon-docs';
 
-import SinglyLinkedList_ES5 from './singlyLinkedList.es5.js';
+import SinglyLinkedList_es5 from './singlyLinkedList.es5.js';
 import es5solution from '!!raw-loader!./singlyLinkedList.es5.js';
 import runTestCase, { cases } from './testCases';
 
@@ -22,7 +22,7 @@ See [card](https://leetcode.com/explore/learn/card/linked-list/209/singly-linked
     </div>
     <div>
       <label>Output: </label>
-      <span>{JSON.stringify(runTestCase(SinglyLinkedList_ES5, case1))}</span>
+      <span>{JSON.stringify(runTestCase(SinglyLinkedList_es5, case1))}</span>
     </div>
   </Story>
 </Canvas>
