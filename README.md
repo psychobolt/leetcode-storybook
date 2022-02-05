@@ -26,6 +26,7 @@ If you wish the build your own stories and even contribute, please see [DEVELOPM
 A list of libraries you may want to check out. They are awesome!
 
 - [psychobolt / leetcode-storybook-generator](https://github.com/psychobolt/leetcode-storybook-generator) - Coming Soon! A Yeoman Generator that scafolds boilerplate code for your stories.
-- [LeetCode-OpenSource / vscode-leetcode](https://github.com/LeetCode-OpenSource/vscode-leetcode) - Solve LeetCode problems in VS Code.
+- [LeetCode-OpenSource / vscode-leetcode](https://github.com/LeetCode-OpenSource/vscode-leetcode) - Solve LeetCode problems in VS Code
+- [wangtao0101 / vscode-debug-leetcode](https://github.com/wangtao0101/vscode-debug-leetcode) - vscode debug extension for leetcode, can work with vscode-leetcode
 - [beizhedenglong / leetcode-site-generator](https://github.com/beizhedenglong/leetcode-site-generator) - Generate your personal LeetCode website with one command!
 - [JacobLinCool / LeetCode-Query](https://github.com/JacobLinCool/LeetCode-Query) - A LeetCode Query API for TypeScript & JavaScript. Built for serverless platforms.
