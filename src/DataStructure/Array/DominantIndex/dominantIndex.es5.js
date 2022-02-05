@@ -1,3 +1,11 @@
+/*
+ * @lc app=leetcode id=747 lang=javascript
+ *
+ * [747] Largest Number At Least Twice of Others
+ */
+
+// @lc code=start
+
 /**
  * @param {number[]} nums
  * @return {number}
@@ -17,5 +25,7 @@ var dominantIndex = function(nums) {
   }
   return largestIndex;
 };
+
+// @lc code=end
 
 module.exports = dominantIndex;
