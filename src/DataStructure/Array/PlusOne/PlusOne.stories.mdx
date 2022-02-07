@@ -1,0 +1,28 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
+
+import plusOne_es5 from './plusOne.es5';
+import es5solution from '!!raw-loader!./plusOne.es5';
+import runTestCase, { cases } from './testCases';
+
+export const case1 = cases[0];
+
+<Meta title="Array/Plus One" />
+
+# Plus One
+
+See [card](https://leetcode.com/explore/learn/card/array-and-string/201/introduction-to-array/1148/).
+
+## ES5
+
+<Canvas>
+  <Story name="ES5" parameters={{ docs: { source: { code: es5solution } }}}>
+    <div>
+      <label>Input: </label>
+      <span>{JSON.stringify(case1.nums)}</span>
+    </div>
+    <div>
+      <label>Output: </label>
+      <span>{JSON.stringify(runTestCase(plusOne_es5, case1))}</span>
+    </div>
+  </Story>
+</Canvas>

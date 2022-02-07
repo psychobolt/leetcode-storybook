@@ -5,7 +5,9 @@ runs:
   steps:
     - run: npm ci
       shell: bash
-    - run: CI=true npm test -- --coverage
+    - run: npm run lint
+      shell: bash
+    - run: npm test -- --ci --coverage
       shell: bash
     - run: npm run codecov
       shell: bash

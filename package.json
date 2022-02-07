@@ -12,9 +12,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "prepare": "is-ci || husky install",
     "start": "start-storybook -p 3000",
     "build": "build-storybook",
     "test": "react-scripts test",
+    "lint": "eslint src",
     "eject": "react-scripts eject",
     "codecov": "codecov"
   },
@@ -35,7 +37,10 @@
     ]
   },
   "jest": {
-    "coveragePathIgnorePatterns": ["/node_modules/", "index.js"],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "index.js"
+    ],
     "coverageThreshold": {
       "./src/**/*.js": {
         "statements": 95,
@@ -67,11 +72,20 @@
     "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.16",
     "codecov": "^3.8.3",
+    "eslint": "^8.8.0",
     "glob": "^7.2.0",
+    "husky": "^7.0.4",
+    "is-ci": "^3.0.1",
     "is-class": "^0.0.9",
+    "lint-staged": "^12.3.3",
     "lodash": "^4.17.21",
     "path": "^0.12.7",
     "slash": "^3.0.0",
     "webpack": "^5.67.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint"
+    ]
   }
 }
