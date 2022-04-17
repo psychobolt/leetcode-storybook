@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:storybook/recommended",
+    "plugin:flowtype/recommended",
+    "plugin:mdx/recommended"
+  ],
+  "rules": {
+    "arrow-parens": ["error", "as-needed"],
+    "import/extensions": ["error", "ignorePackages"],
+    "import/prefer-default-export": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx", ".mdx"] }],
+    "no-restricted-exports": 0
+  },
+  "overrides": [
+    {
+      "files": ["*.?(c)js", "*.jsx"],
+      "parser": "@babel/eslint-parser",
+      "parserOptions": {
+        "babelOptions": {
+          "configFile": "./babel.config.cjs"
+        }
+      },
+      "plugins": ["flowtype", "jest"],
+      "env": {
+        "jest/globals": true
+      }
+    },
+    {
+      "files": ["*.md?(x)"],
+      "rules": {
+        "max-len": 0,
+        "semi": 0,
+        "react/jsx-indent": 0
+      }
+    }
+  ]
+}

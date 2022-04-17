@@ -1,0 +1,25 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  bundle:
+    uses: ./.github/workflows/bundle.yml
+  test:
+    needs: bundle
+    uses: ./.github/workflows/test.yml
+    secrets:
+      CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: bundles_${{ github.sha }}
+          path: storybook-static
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: storybook-static

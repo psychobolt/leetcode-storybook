@@ -1,0 +1,31 @@
+{
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "files.eol": "\n",
+  "eslint.options": {
+    "extensions": [
+      ".js",
+      ".jsx",
+      ".md",
+      ".mdx"
+    ]
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "javascript.validate.enable": false,
+  "eslint.validate": [
+    "markdown",
+    "mdx",
+    "javascript",
+    "javascriptreact"
+  ],
+  "eslint.nodePath": ".yarn/sdks",
+  "stylelint.validate": [
+    "javascript"
+  ],
+  "stylelint.configFile": "./.stylelintrc.json",
+  "flow.pathToFlow": "${workspaceFolder}/.yarn/sdks/.bin/flow"
+}
