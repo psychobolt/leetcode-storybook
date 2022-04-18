@@ -5,7 +5,7 @@
 [![Main workflow](https://github.com/psychobolt/leetcode-storybook/actions/workflows/main.yml/badge.svg)](https://github.com/psychobolt/eetcode-storybook/actions/workflows/main.yml)
 [![codecov](https://codecov.io/gh/psychobolt/leetcode-storybook/branch/master/graph/badge.svg)](https://codecov.io/gh/psychobolt/leetcode-storybook/tree/master/src)
 
-A list of solved and curated [LeetCode](https://www.leetcode.com) problems with solutions in ES5 and ES6 within [Storybook](https://storybook.js.org).
+A list of solved and curated [LeetCode](https://www.leetcode.com) problems with solutions within [Storybook](https://storybook.js.org).
 
 ## Development
 
