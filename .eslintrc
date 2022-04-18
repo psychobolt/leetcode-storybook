@@ -23,7 +23,11 @@
           "configFile": "./babel.config.cjs"
         }
       },
-      "plugins": ["flowtype", "jest"],
+      "plugins": ["flowtype"]
+    },
+    {
+      "files": ["**/__tests__/**/*.js"],
+      "plugins": ["jest"],
       "env": {
         "jest/globals": true
       }
