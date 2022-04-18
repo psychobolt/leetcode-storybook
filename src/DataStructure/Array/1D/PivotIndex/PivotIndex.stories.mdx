@@ -1,16 +1,16 @@
 import { Meta, Canvas, Story } from '@storybook/addon-docs';
 
-import plusOne from './plusOne.es3.cjs';
-import solution from './plusOne.es3.cjs?raw';
+import findPivot from './pivot.es3.cjs';
+import solution from './pivot.es3.cjs?raw';
 import runTestCase, { cases } from './testCases.js';
 
 export const c0 = cases[0];
 
-<Meta title="Array/1D/Plus One" />
+<Meta title="Array/1D/Pivot Index" />
 
-# Plus One
+# Pivot Index
 
-See [card](https://leetcode.com/explore/learn/card/array-and-string/201/introduction-to-array/1148/).
+See [card](https://leetcode.com/explore/learn/card/array-and-string/201/introduction-to-array/1144/).
 
 ## Default Case
 
@@ -22,7 +22,7 @@ See [card](https://leetcode.com/explore/learn/card/array-and-string/201/introduc
     </div>
     <div>
       <span>Output: </span>
-      <span>{JSON.stringify(runTestCase(plusOne, c0))}</span>
+      <span>{JSON.stringify(runTestCase(findPivot, c0))}</span>
     </div>
   </Story>
 </Canvas>

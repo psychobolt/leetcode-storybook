@@ -1,10 +1,10 @@
 import { Meta, Canvas, Story } from '@storybook/addon-docs';
 
-import dominantIndex_es5 from './dominantIndex.es5'
-import es5solution from '!!raw-loader!./dominantIndex.es5';
-import runTestCase, { cases } from './testCases';
+import dominantIndex from './dominantIndex.es3.cjs';
+import solution from './dominantIndex.es3.cjs?raw';
+import runTestCase, { cases } from './testCases.js';
 
-export const case1 = cases[0];
+export const c0 = cases[0];
 
 <Meta title="Array/1D/Dominant Index" />
 
@@ -12,17 +12,17 @@ export const case1 = cases[0];
 
 See [card](https://leetcode.com/explore/learn/card/array-and-string/201/introduction-to-array/1147/).
 
-## ES5
+## Default Case
 
 <Canvas>
-  <Story name="ES5" parameters={{ docs: { source: { code: es5solution }}}}>
+  <Story name="Default Case" parameters={{ docs: { source: { code: solution } } }}>
     <div>
-      <label>Input: </label>
-      <span>{JSON.stringify(case1.nums)}</span>
+      <span>Input: </span>
+      <span>{JSON.stringify(c0.nums)}</span>
     </div>
     <div>
-      <label>Output: </label>
-      <span>{JSON.stringify(runTestCase(dominantIndex_es5, case1))}</span>
+      <span>Output: </span>
+      <span>{JSON.stringify(runTestCase(dominantIndex, c0))}</span>
     </div>
   </Story>
 </Canvas>

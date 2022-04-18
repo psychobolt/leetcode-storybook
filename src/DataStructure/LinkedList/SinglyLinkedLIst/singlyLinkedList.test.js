@@ -1,9 +1,9 @@
-import runTestCase, { cases } from './testCases';
+import runTestCase, { cases } from './testCases.js';
 
-import SinglyLinkedList_es5 from './singlyLinkedList.es5';
+import SinglyLinkedList from './singlyLinkedList.es3.cjs';
 
-test('SinglyLinkedList (es5) - Run all test cases', () => {
+test('[Linked List/Singly Linked List] - Run all test cases', () => {
   cases.forEach(testCase => {
-    expect(runTestCase(SinglyLinkedList_es5, testCase)).toEqual(testCase.expected);
+    expect(runTestCase(SinglyLinkedList, testCase)).toEqual(testCase.expected);
   });
 });

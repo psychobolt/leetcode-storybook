@@ -1,0 +1,28 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs';
+
+import findDiagonalOrder from './findDiagonalOrder.es3.cjs';
+import solution from './findDiagonalOrder.es3.cjs?raw';
+import runTestCase, { cases } from './testCases.js';
+
+export const c0 = cases[0];
+
+<Meta title="Array/2D/Traverse Diagonal" />
+
+# Traverse Diagonal
+
+See [card](https://leetcode.com/explore/learn/card/array-and-string/202/introduction-to-2d-array/1167/).
+
+## Default Case
+
+<Canvas>
+  <Story name="ES5" parameters={{ docs: { source: { code: solution } } }}>
+    <div>
+      <span>Input: </span>
+      <span>{JSON.stringify(c0.mat)}</span>
+    </div>
+    <div>
+      <span>Output: </span>
+      <span>{JSON.stringify(runTestCase(findDiagonalOrder, c0))}</span>
+    </div>
+  </Story>
+</Canvas>

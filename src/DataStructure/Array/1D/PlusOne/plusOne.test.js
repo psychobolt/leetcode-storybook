@@ -1,9 +1,9 @@
-import runTestCase, { cases } from './testCases';
+import runTestCase, { cases } from './testCases.js';
 
-import plusOne_es5 from './plusOne.es5';
+import plusOne from './plusOne.es3.cjs';
 
-test('Array - Plus One (es5) - Run all test cases', () => {
+test('[Array/1D/Plus One] - Run all test cases', () => {
   cases.forEach(testCase => {
-    expect(runTestCase(plusOne_es5, testCase)).toEqual(testCase.expected);
+    expect(runTestCase(plusOne, testCase)).toEqual(testCase.expected);
   });
 });

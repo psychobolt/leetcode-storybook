@@ -1,8 +1,8 @@
-import dominantIndex_es5 from './dominantIndex.es5';
-import runTestCase, { cases } from './testCases';
+import dominantIndex from './dominantIndex.es3.cjs';
+import runTestCase, { cases } from './testCases.js';
 
-test('Dominant Index (es5) - Run all test cases', () => {
+test('[Array/1D/Dominant Index] - Run all test cases', () => {
   cases.forEach(testCase => {
-    expect(runTestCase(dominantIndex_es5, testCase)).toEqual(testCase.expected);
+    expect(runTestCase(dominantIndex, testCase)).toEqual(testCase.expected);
   });
 });
