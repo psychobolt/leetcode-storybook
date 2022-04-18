@@ -15,10 +15,10 @@ MyLinkedList.prototype.get = function get(index) {
   var i;
   var ptr;
   for (i = 0, ptr = this.head; ptr != null; ptr = ptr.next) {
-    i += 1;
     if (index === i) {
       return ptr.val;
     }
+    i += 1;
   }
   return -1;
 };
