@@ -28,7 +28,7 @@
     "@babel/preset-flow": "7.16.7",
     "@babel/preset-react": "7.16.7",
     "@mdx-js/react": "1.6.22",
-    "@storybook/addon-actions": "6.5.0-alpha.62",
+    "@storybook/addon-actions": "6.5.0-alpha.64",
     "@storybook/addon-docs": "6.5.0-alpha.62",
     "@storybook/addon-essentials": "6.5.0-alpha.62",
     "@storybook/addon-interactions": "6.5.0-alpha.62",
