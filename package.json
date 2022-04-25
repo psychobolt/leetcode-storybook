@@ -68,6 +68,7 @@
     "flow-bin": "0.176.2",
     "flow-typed": "3.7.0",
     "http-server": "14.1.0",
+    "isbinaryfile": "5.0.0",
     "jest": "27.5.1",
     "jest-specific-snapshot": "5.0.0",
     "react-is": "18.0.0",
@@ -79,7 +80,9 @@
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "https://github.com/psychobolt/stylelint-processor-styled-components",
     "symlink-dir": "5.0.1",
-    "webpack": "5.72.0"
+    "vsc-leetcode-cli": "2.8.0",
+    "webpack": "5.72.0",
+    "yo": "4.3.0"
   },
   "scripts": {
     "start": "yarn run storybook",

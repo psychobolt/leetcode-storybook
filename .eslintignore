@@ -2,6 +2,7 @@
 /.yarn
 /flow-deps-modules
 shared/flow-typed/npm
+src/**/*.md
 /storybook-static
 .pnp.cjs
 .pnp.loader.mjs
