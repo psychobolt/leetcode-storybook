@@ -3231,6 +3231,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/client-logger@npm:6.4.22":
+  version: 6.4.22
+  resolution: "@storybook/client-logger@npm:6.4.22"
+  dependencies:
+    core-js: ^3.8.2
+    global: ^4.4.0
+  checksum: ed615b4f4e022830565b47fe850fa4dc7f75169b84710b5807e95cb75e45b58cba3f514154e039e3fe6ad96519faacaa096e3fd26af5b31322c29946e066c5b2
+  languageName: node
+  linkType: hard
+
 "@storybook/client-logger@npm:6.5.0-alpha.62, @storybook/client-logger@npm:^6.4.0 || >=6.5.0-0":
   version: 6.5.0-alpha.62
   resolution: "@storybook/client-logger@npm:6.5.0-alpha.62"
@@ -3962,6 +3972,29 @@ __metadata:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
   checksum: 11ab5d5f1708b648a0ab5c516e8d84ebb165d2fd7167af80ac38a549f40b7b1d0e3ea4e5e2a94bf71fb45f8d4e8cb1d48fee1f63c12d181e8906a7ef149601ea
+  languageName: node
+  linkType: hard
+
+"@storybook/theming@npm:6.4.22":
+  version: 6.4.22
+  resolution: "@storybook/theming@npm:6.4.22"
+  dependencies:
+    "@emotion/core": ^10.1.1
+    "@emotion/is-prop-valid": ^0.8.6
+    "@emotion/styled": ^10.0.27
+    "@storybook/client-logger": 6.4.22
+    core-js: ^3.8.2
+    deep-object-diff: ^1.1.0
+    emotion-theming: ^10.0.27
+    global: ^4.4.0
+    memoizerific: ^1.11.3
+    polished: ^4.0.5
+    resolve-from: ^5.0.0
+    ts-dedent: ^2.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: bb95f7fa400f09eb01ac55ebb2ab65b03300033971fe921ab019dc01b9ccd110ed714da8788c0286a6b59ed1b31e6f65296b3319c332835d302cacf0259a0b44
   languageName: node
   linkType: hard
 
@@ -14010,12 +14043,14 @@ __metadata:
     "@storybook/addons": 6.5.0-alpha.62
     "@storybook/builder-webpack5": 6.5.0-alpha.62
     "@storybook/client-api": 6.5.0-alpha.62
+    "@storybook/components": 6.5.0-alpha.62
     "@storybook/jest": 0.0.10
     "@storybook/manager-webpack5": 6.5.0-alpha.62
     "@storybook/preview-web": 6.5.0-alpha.62
     "@storybook/react": 6.5.0-alpha.62
     "@storybook/testing-library": 0.0.11
     "@storybook/testing-react": 1.2.4
+    "@storybook/theming": 6.4.22
     "@testing-library/react": 13.1.1
     "@yarnpkg/sdks": 3.0.0-rc.2
     app-root-path: 3.0.0
@@ -14045,6 +14080,7 @@ __metadata:
     isbinaryfile: 5.0.0
     jest: 27.5.1
     jest-specific-snapshot: 5.0.0
+    markdown-to-jsx: 7.1.7
     react: 18.0.0
     react-dom: 18.0.0
     react-is: 18.0.0
@@ -14543,6 +14579,15 @@ __metadata:
   dependencies:
     repeat-string: ^1.0.0
   checksum: 9bb634a9300016cbb41216c1eab44c74b6b7083ac07872e296f900a29449cf0e260ece03fa10c3e9784ab94c61664d1d147da0315f95e1336e2bdcc025615c90
+  languageName: node
+  linkType: hard
+
+"markdown-to-jsx@npm:7.1.7":
+  version: 7.1.7
+  resolution: "markdown-to-jsx@npm:7.1.7"
+  peerDependencies:
+    react: ">= 0.14.0"
+  checksum: b2c0ea7d0988fad0c709989b3b1b3a5600d1e80b60266f9618386f7afead4a6b5eba9ee1a3943df6a3dcb1599ea89e58467d1b17b6dd3af3c60984c60a85d06d
   languageName: node
   linkType: hard
 

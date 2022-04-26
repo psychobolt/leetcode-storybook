@@ -1,12 +1,12 @@
 import { Meta, Canvas, Story } from '@storybook/addon-docs';
 
 import SinglyLinkedList from './singlyLinkedList.es3.cjs';
-import es5solution from './singlyLinkedList.es3.cjs?raw';
+import code from './singlyLinkedList.es3.cjs?raw';
 import runTestCase, { cases } from './testCases.js';
 
 export const c0 = cases[0];
 
-<Meta title="Linked List/Singly Linked List" />
+<Meta title="Data Structure/Linked List/Singly Linked List/Solution" />
 
 # Singly Linked List
 
@@ -15,7 +15,7 @@ See [card](https://leetcode.com/explore/learn/card/linked-list/209/singly-linked
 ## Default Case
 
 <Canvas>
-  <Story name="Default Case" parameters={{ docs: { source: { code: es5solution } } }}>
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
     <div>
       <span>Input: </span>
       <span>{JSON.stringify(c0.commands)}</span>
