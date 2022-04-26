@@ -1,15 +1,15 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs';
-import solution from './plusOne.es3.cjs';
-import code from './plusOne.es3.cjs?raw';
+import solution from './findDiagonalOrder.es3.cjs';
+import code from './findDiagonalOrder.es3.cjs?raw';
 import runTestCase, { cases } from './testCases.js';
 
 export const c0 = cases[0];
 
-<Meta title="Data Structure/Array/1D/[66] Plus One/Solution" />
+<Meta title="Data Structure/Array/2D/[498] Diagonal Traverse/Solution" />
 
 # Solution
 
-Modify the solution file `./plusOne.es3.cjs` to test results.
+Modify the solution file `./findDiagonalOrder.es3.cjs` to test results.
 
 ## Default Case
 
@@ -17,7 +17,7 @@ Modify the solution file `./plusOne.es3.cjs` to test results.
   <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
     <div>
       <span>Input: </span>
-      <span>{JSON.stringify(c0.input)}</span>
+      <span>{JSON.stringify(c0.mat)}</span>
     </div>
     <div>
       <span>Output: </span>
