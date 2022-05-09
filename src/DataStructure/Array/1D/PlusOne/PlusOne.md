@@ -18,7 +18,7 @@
 
 </details>
 <br />
-<p>You are given a <strong>large integer</strong> represented as an integer array <code>digits</code>, where each <code>digits[i]</code> is the <code>i<sup>th</sup></code> digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading <code>0</code>&#39;s.</p>
+<p>You are given a <strong>large integer</strong> represented as an integer array <code>digits</code>, where each <code>digits[i]</code> is the <code>i<sup>th</sup></code> digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading <code>0</code>'s.</p>
 
 <p>Increment the large integer by one and return <em>the resulting array of digits</em>.</p>
 
@@ -53,6 +53,6 @@ Thus, the result should be [1,0].</code></pre>
 <ul>
   <li><code>1 &lt;= digits.length &lt;= 100</code></li>
   <li><code>0 &lt;= digits[i] &lt;= 9</code></li>
-  <li><code>digits</code> does not contain any leading <code>0</code>&#39;s.</li>
+  <li><code>digits</code> does not contain any leading <code>0</code>'s.</li>
 </ul>
 
