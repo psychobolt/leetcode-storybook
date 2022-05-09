@@ -3451,16 +3451,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/client-logger@npm:6.4.22":
-  version: 6.4.22
-  resolution: "@storybook/client-logger@npm:6.4.22"
-  dependencies:
-    core-js: ^3.8.2
-    global: ^4.4.0
-  checksum: ed615b4f4e022830565b47fe850fa4dc7f75169b84710b5807e95cb75e45b58cba3f514154e039e3fe6ad96519faacaa096e3fd26af5b31322c29946e066c5b2
-  languageName: node
-  linkType: hard
-
 "@storybook/client-logger@npm:6.5.0-alpha.62, @storybook/client-logger@npm:^6.4.0 || >=6.5.0-0":
   version: 6.5.0-alpha.62
   resolution: "@storybook/client-logger@npm:6.5.0-alpha.62"
@@ -4192,29 +4182,6 @@ __metadata:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
   checksum: 11ab5d5f1708b648a0ab5c516e8d84ebb165d2fd7167af80ac38a549f40b7b1d0e3ea4e5e2a94bf71fb45f8d4e8cb1d48fee1f63c12d181e8906a7ef149601ea
-  languageName: node
-  linkType: hard
-
-"@storybook/theming@npm:6.4.22":
-  version: 6.4.22
-  resolution: "@storybook/theming@npm:6.4.22"
-  dependencies:
-    "@emotion/core": ^10.1.1
-    "@emotion/is-prop-valid": ^0.8.6
-    "@emotion/styled": ^10.0.27
-    "@storybook/client-logger": 6.4.22
-    core-js: ^3.8.2
-    deep-object-diff: ^1.1.0
-    emotion-theming: ^10.0.27
-    global: ^4.4.0
-    memoizerific: ^1.11.3
-    polished: ^4.0.5
-    resolve-from: ^5.0.0
-    ts-dedent: ^2.0.0
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-    react-dom: ^16.8.0 || ^17.0.0
-  checksum: bb95f7fa400f09eb01ac55ebb2ab65b03300033971fe921ab019dc01b9ccd110ed714da8788c0286a6b59ed1b31e6f65296b3319c332835d302cacf0259a0b44
   languageName: node
   linkType: hard
 
@@ -14466,7 +14433,7 @@ __metadata:
     "@storybook/react": 6.5.0-alpha.62
     "@storybook/testing-library": 0.0.11
     "@storybook/testing-react": 1.2.4
-    "@storybook/theming": 6.4.22
+    "@storybook/theming": 6.5.0-alpha.62
     "@testing-library/react": 13.2.0
     "@yarnpkg/sdks": 3.0.0-rc.4
     app-root-path: 3.0.0
