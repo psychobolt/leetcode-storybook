@@ -102,7 +102,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["execa", "npm:6.1.0"],\
             ["flow-bin", "npm:0.176.2"],\
             ["flow-typed", "npm:3.7.0"],\
-            ["generator-leetcode-storybook", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:0.0.2"],\
+            ["generator-leetcode-storybook", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:0.0.3"],\
             ["http-server", "npm:14.1.0"],\
             ["isbinaryfile", "npm:5.0.0"],\
             ["jest", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:27.5.1"],\
@@ -16161,17 +16161,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["generator-leetcode-storybook", [\
-        ["npm:0.0.2", {\
-          "packageLocation": "./.yarn/cache/generator-leetcode-storybook-npm-0.0.2-0ffbb7949a-1e09d02a36.zip/node_modules/generator-leetcode-storybook/",\
+        ["npm:0.0.3", {\
+          "packageLocation": "./.yarn/cache/generator-leetcode-storybook-npm-0.0.3-93bdb98695-7285cb7f68.zip/node_modules/generator-leetcode-storybook/",\
           "packageDependencies": [\
-            ["generator-leetcode-storybook", "npm:0.0.2"]\
+            ["generator-leetcode-storybook", "npm:0.0.3"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:0.0.2", {\
-          "packageLocation": "./.yarn/__virtual__/generator-leetcode-storybook-virtual-e4c6148bff/0/cache/generator-leetcode-storybook-npm-0.0.2-0ffbb7949a-1e09d02a36.zip/node_modules/generator-leetcode-storybook/",\
+        ["virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:0.0.3", {\
+          "packageLocation": "./.yarn/__virtual__/generator-leetcode-storybook-virtual-1f39dd04f4/0/cache/generator-leetcode-storybook-npm-0.0.3-93bdb98695-7285cb7f68.zip/node_modules/generator-leetcode-storybook/",\
           "packageDependencies": [\
-            ["generator-leetcode-storybook", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:0.0.2"],\
+            ["generator-leetcode-storybook", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:0.0.3"],\
             ["@types/vsc-leetcode-cli", null],\
             ["espree", "npm:9.3.2"],\
             ["execa", "npm:6.1.0"],\
@@ -16182,7 +16182,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["slash", "npm:4.0.0"],\
             ["to-absolute-glob", "https://github.com/psychobolt/to-absolute-glob.git#commit=8583eea2b8791b92050a7bee00db808c5438cad1"],\
             ["vsc-leetcode-cli", "npm:2.8.0"],\
-            ["yeoman-generator", "virtual:e4c6148bff91d6f4be1fdaa323f1fb916b88fa0218388e01752f6b8556e894793de7d965e4037cccd4e7a7a0a626aab01d47f15fa99374bb08de429fbbfe7244#npm:5.6.1"]\
+            ["yeoman-generator", "virtual:1f39dd04f4bf466b66f240af4445b02c952f67126e1eac1f98c4feb19fb844ff968fd9db112a8b9418c9b885ff7acf9ee322f08ce622afd32802b02783428690#npm:5.6.1"]\
           ],\
           "packagePeers": [\
             "@types/vsc-leetcode-cli",\
@@ -19935,7 +19935,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["execa", "npm:6.1.0"],\
             ["flow-bin", "npm:0.176.2"],\
             ["flow-typed", "npm:3.7.0"],\
-            ["generator-leetcode-storybook", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:0.0.2"],\
+            ["generator-leetcode-storybook", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:0.0.3"],\
             ["http-server", "npm:14.1.0"],\
             ["isbinaryfile", "npm:5.0.0"],\
             ["jest", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:27.5.1"],\
@@ -29383,10 +29383,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:e4c6148bff91d6f4be1fdaa323f1fb916b88fa0218388e01752f6b8556e894793de7d965e4037cccd4e7a7a0a626aab01d47f15fa99374bb08de429fbbfe7244#npm:5.6.1", {\
-          "packageLocation": "./.yarn/__virtual__/yeoman-generator-virtual-e679b77920/0/cache/yeoman-generator-npm-5.6.1-a49b7654c4-ef036210b6.zip/node_modules/yeoman-generator/",\
+        ["virtual:1f39dd04f4bf466b66f240af4445b02c952f67126e1eac1f98c4feb19fb844ff968fd9db112a8b9418c9b885ff7acf9ee322f08ce622afd32802b02783428690#npm:5.6.1", {\
+          "packageLocation": "./.yarn/__virtual__/yeoman-generator-virtual-f0860339fb/0/cache/yeoman-generator-npm-5.6.1-a49b7654c4-ef036210b6.zip/node_modules/yeoman-generator/",\
           "packageDependencies": [\
-            ["yeoman-generator", "virtual:e4c6148bff91d6f4be1fdaa323f1fb916b88fa0218388e01752f6b8556e894793de7d965e4037cccd4e7a7a0a626aab01d47f15fa99374bb08de429fbbfe7244#npm:5.6.1"],\
+            ["yeoman-generator", "virtual:1f39dd04f4bf466b66f240af4445b02c952f67126e1eac1f98c4feb19fb844ff968fd9db112a8b9418c9b885ff7acf9ee322f08ce622afd32802b02783428690#npm:5.6.1"],\
             ["@types/yeoman-environment", null],\
             ["chalk", "npm:4.1.2"],\
             ["dargs", "npm:7.0.0"],\
