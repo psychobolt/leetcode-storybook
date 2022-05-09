@@ -2,7 +2,7 @@
 
 | Category | Difficulty | Likes | Dislikes |
 | :------: | :--------: | :---: | :------: |
-| algorithms | Easy (51.55%) | 3098 | 367 |
+| algorithms | Easy (51.64%) | 3152 | 371 |
 
 <details>
   <summary><strong>Tags</strong></summary>
@@ -15,7 +15,7 @@
   <summary><strong>Companies</strong></summary>
 
   
-  
+
 </details>
 <br />
 <p>Given an array of integers <code>nums</code>, calculate the <strong>pivot index</strong> of this array.</p>
@@ -56,9 +56,10 @@ Right sum = nums[1] + nums[2] = 1 + -1 = 0</code></pre>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
-	<li><code>-1000 &lt;= nums[i] &lt;= 1000</code></li>
+  <li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
+  <li><code>-1000 &lt;= nums[i] &lt;= 1000</code></li>
 </ul>
 
 <p>&nbsp;</p>
 <p><strong>Note:</strong> This question is the same as&nbsp;1991:&nbsp;<a href="https://leetcode.com/problems/find-the-middle-index-in-array/" target="_blank">https://leetcode.com/problems/find-the-middle-index-in-array/</a></p>
+

@@ -2,7 +2,7 @@
 
 | Category | Difficulty | Likes | Dislikes |
 | :------: | :--------: | :---: | :------: |
-| algorithms | Easy (42.80%) | 4055 | 4098 |
+| algorithms | Easy (42.84%) | 4136 | 4125 |
 
 <details>
   <summary><strong>Tags</strong></summary>
@@ -15,7 +15,7 @@
   <summary><strong>Companies</strong></summary>
 
   google
-  
+
 </details>
 <br />
 <p>You are given a <strong>large integer</strong> represented as an integer array <code>digits</code>, where each <code>digits[i]</code> is the <code>i<sup>th</sup></code> digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading <code>0</code>&#39;s.</p>
@@ -51,7 +51,8 @@ Thus, the result should be [1,0].</code></pre>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= digits.length &lt;= 100</code></li>
-	<li><code>0 &lt;= digits[i] &lt;= 9</code></li>
-	<li><code>digits</code> does not contain any leading <code>0</code>&#39;s.</li>
+  <li><code>1 &lt;= digits.length &lt;= 100</code></li>
+  <li><code>0 &lt;= digits[i] &lt;= 9</code></li>
+  <li><code>digits</code> does not contain any leading <code>0</code>&#39;s.</li>
 </ul>
+

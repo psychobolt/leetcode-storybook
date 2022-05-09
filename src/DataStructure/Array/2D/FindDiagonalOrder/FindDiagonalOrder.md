@@ -15,7 +15,7 @@
   <summary><strong>Companies</strong></summary>
 
   google
-  
+
 </details>
 <br />
 <p>Given an <code>m x n</code> matrix <code>mat</code>, return <em>an array of all the elements of the array in a diagonal order</em>.</p>
@@ -35,9 +35,10 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>m == mat.length</code></li>
-	<li><code>n == mat[i].length</code></li>
-	<li><code>1 &lt;= m, n &lt;= 10<sup>4</sup></code></li>
-	<li><code>1 &lt;= m * n &lt;= 10<sup>4</sup></code></li>
-	<li><code>-10<sup>5</sup> &lt;= mat[i][j] &lt;= 10<sup>5</sup></code></li>
+  <li><code>m == mat.length</code></li>
+  <li><code>n == mat[i].length</code></li>
+  <li><code>1 &lt;= m, n &lt;= 10<sup>4</sup></code></li>
+  <li><code>1 &lt;= m * n &lt;= 10<sup>4</sup></code></li>
+  <li><code>-10<sup>5</sup> &lt;= mat[i][j] &lt;= 10<sup>5</sup></code></li>
 </ul>
+

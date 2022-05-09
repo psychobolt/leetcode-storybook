@@ -2,7 +2,7 @@
 
 | Category | Difficulty | Likes | Dislikes |
 | :------: | :--------: | :---: | :------: |
-| algorithms | Easy (45.20%) | 669 | 753 |
+| algorithms | Easy (45.20%) | 666 | 753 |
 
 <details>
   <summary><strong>Tags</strong></summary>
@@ -15,7 +15,7 @@
   <summary><strong>Companies</strong></summary>
 
   
-  
+
 </details>
 <br />
 <p>You are given an integer array <code>nums</code> where the largest integer is <strong>unique</strong>.</p>
@@ -47,7 +47,8 @@ The index of value 6 is 1, so we return 1.</code></pre>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= nums.length &lt;= 50</code></li>
-	<li><code>0 &lt;= nums[i] &lt;= 100</code></li>
-	<li>The largest element in <code>nums</code> is unique.</li>
+  <li><code>1 &lt;= nums.length &lt;= 50</code></li>
+  <li><code>0 &lt;= nums[i] &lt;= 100</code></li>
+  <li>The largest element in <code>nums</code> is unique.</li>
 </ul>
+
