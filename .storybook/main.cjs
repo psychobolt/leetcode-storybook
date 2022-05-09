@@ -3,8 +3,7 @@ const webpackConfig = require('./webpack.config.cjs');
 module.exports = {
   stories: [
     '../src/README.mdx',
-    '../src/**/*.(problem|solution|stories).mdx',
-    '../src/**/*.stories.js',
+    '../src/**/*.(problem|solution).mdx',
   ],
   addons: [
     '@storybook/addon-links',
