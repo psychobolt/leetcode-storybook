@@ -13,7 +13,7 @@ Modify the solution file `./pivotIndex.es3.cjs` to test results.
 
 ## Default Case
 
-<Canvas>
+<Canvas withSource="open">
   <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
     <div>
       <span>Input: </span>
@@ -25,3 +25,87 @@ Modify the solution file `./pivotIndex.es3.cjs` to test results.
     </div>
   </Story>
 </Canvas>
+
+## Explanation
+
+First we create our indices.
+```js
+var pivot;
+var i;
+```
+
+We want to check every position of the array or until a `pivot` is found, where `left` sum is equal to `right` sum.
+```js
+var pivot;
+var i;
+for (pivot = 0; pivot < nums.length; pivot += 1) {
+  // ...
+}
+```
+
+We need to evaluate each side. So we create two temporary variables for storing `left` and `right` sums.
+```js
+var pivot;
+var left;
+var right;
+for (pivot = 0; pivot < nums.length; pivot += 1) {
+  left = 0;
+  right = 0;
+  // calculate left sum
+  // calculate right sum
+}
+```
+
+### Left Sum
+
+To find the `left` sum is simply the range of values from `0` to `pivot`.
+```js
+for (i = 0; i < pivot; i += 1) {
+  left += nums[i];
+}
+```
+
+### Right Sum
+
+The `right` sum is the range of values from `pivot + 1` to `nums.length`.
+```js
+for (i = pivot + 1; i < nums.length; i += 1) {
+  right += nums[i];
+}
+```
+
+### "Sum It All Up"
+
+```js
+var pivot;
+var left;
+var right;
+for (pivot = 0; pivot < nums.length; pivot += 1) {
+  left = 0;
+  right = 0;
+  // calculate left sum
+  for (i = 0; i < pivot; i += 1) {
+    left += nums[i];
+  }
+  // calculate right sum
+  for (i = pivot + 1; i < nums.length; i += 1) {
+    right += nums[i];
+  }
+}
+```
+
+That's all folks...
+
+Just kidding! &#128539; We need to check if `left` sum is equal `right` sum and then return the pivot.
+
+That's easy!
+```js
+if (left === right) {
+  return pivot;
+}
+```
+
+Don't forget to return if we exit from the loop. In that case we did not find a pivot.
+```js
+return -1;
+```

@@ -10,23 +10,24 @@
  * @param {number[]} nums
  * @return {number}
  */
-var pivotIndex = function pivotIndex(nums) {
+var pivotIndex = function (nums) {
+  var pivot;
   var i;
-  var a;
-  var b;
   var left;
   var right;
-  for (i = 0; i < nums.length; i += 1) {
+  for (pivot = 0; pivot < nums.length; pivot += 1) {
     left = 0;
     right = 0;
-    for (a = 0; a < i; a += 1) {
-      left += nums[a];
+    // calculate left sum
+    for (i = 0; i < pivot; i += 1) {
+      left += nums[i];
     }
-    for (b = i + 1; i < b && b < nums.length; b += 1) {
-      right += nums[b];
+    // calculate right sum
+    for (i = pivot + 1; i < nums.length; i += 1) {
+      right += nums[i];
     }
     if (left === right) {
-      return i;
+      return pivot;
     }
   }
   return -1;
