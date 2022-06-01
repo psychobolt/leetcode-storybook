@@ -103,7 +103,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["flow-bin", "npm:0.176.2"],\
             ["flow-typed", "npm:3.7.0"],\
             ["generator-leetcode-storybook", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:0.0.5"],\
-            ["http-server", "npm:14.1.0"],\
+            ["http-server", "npm:14.1.1"],\
             ["isbinaryfile", "npm:5.0.0"],\
             ["jest", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:27.5.1"],\
             ["jest-specific-snapshot", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:5.0.0"],\
@@ -18051,10 +18051,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["http-server", [\
-        ["npm:14.1.0", {\
-          "packageLocation": "./.yarn/cache/http-server-npm-14.1.0-ab0746a665-9a88fb47aa.zip/node_modules/http-server/",\
+        ["npm:14.1.1", {\
+          "packageLocation": "./.yarn/cache/http-server-npm-14.1.1-93097e8f48-4f96742891.zip/node_modules/http-server/",\
           "packageDependencies": [\
-            ["http-server", "npm:14.1.0"],\
+            ["http-server", "npm:14.1.1"],\
             ["basic-auth", "npm:2.0.1"],\
             ["chalk", "npm:4.1.2"],\
             ["corser", "npm:2.0.1"],\
@@ -20664,7 +20664,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["flow-bin", "npm:0.176.2"],\
             ["flow-typed", "npm:3.7.0"],\
             ["generator-leetcode-storybook", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:0.0.5"],\
-            ["http-server", "npm:14.1.0"],\
+            ["http-server", "npm:14.1.1"],\
             ["isbinaryfile", "npm:5.0.0"],\
             ["jest", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:27.5.1"],\
             ["jest-specific-snapshot", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:5.0.0"],\
