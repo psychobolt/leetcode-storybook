@@ -4449,7 +4449,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/plugin-transform-shorthand-properties", "virtual:a158f3813e7190fb90e1875f4a25a50befc91330b426b03fb26a73352dfdfc47c843ad08cd3269a93769ec2a9e019e2a779f74c99353ea0aec8bea1d36d9c07c#npm:7.16.7"],\
             ["@babel/core", "npm:7.17.9"],\
-            ["@babel/helper-plugin-utils", "npm:7.16.7"],\
+            ["@babel/helper-plugin-utils", "npm:7.18.6"],\
             ["@types/babel__core", null]\
           ],\
           "packagePeers": [\
@@ -7741,6 +7741,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
+        ["npm:6.5.8", {\
+          "packageLocation": "./.yarn/cache/@storybook-client-logger-npm-6.5.8-9b81a583e2-6d85471e5f.zip/node_modules/@storybook/client-logger/",\
+          "packageDependencies": [\
+            ["@storybook/client-logger", "npm:6.5.8"],\
+            ["core-js", "npm:3.21.1"],\
+            ["global", "npm:4.4.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:6.5.9", {\
           "packageLocation": "./.yarn/cache/@storybook-client-logger-npm-6.5.9-48ada04545-5b72d93a57.zip/node_modules/@storybook/client-logger/",\
           "packageDependencies": [\
@@ -8907,7 +8916,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@storybook-testing-library-npm-0.0.13-296547921a-759361ad3f.zip/node_modules/@storybook/testing-library/",\
           "packageDependencies": [\
             ["@storybook/testing-library", "npm:0.0.13"],\
-            ["@storybook/client-logger", "npm:6.5.9"],\
+            ["@storybook/client-logger", "npm:6.5.8"],\
             ["@storybook/instrumenter", "npm:6.4.21"],\
             ["@testing-library/dom", "npm:8.13.0"],\
             ["@testing-library/user-event", "virtual:296547921a6d1fc7d09e7d8ff5001acce1c1a24449a8e9e2493dcaad14a627fad37e4c994feae32e81bcbddf2f06c98c0eaf87073ef5761ab0137914056426ec#npm:13.5.0"],\

@@ -2246,7 +2246,7 @@ __metadata:
   version: 7.16.7
   resolution: "@babel/plugin-transform-shorthand-properties@npm:7.16.7"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.16.7
+    "@babel/helper-plugin-utils": ^7.18.6
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: ca381ecf8f48696512172deca40af46b1f64e3497186fdc2c9009286d8f06b468c4d61cdc392dc8b0c165298117dda67be9e2ff0e99d7691b0503f1240d4c62b
@@ -4569,13 +4569,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/client-logger@npm:6.5.9, @storybook/client-logger@npm:^6.4.0":
+"@storybook/client-logger@npm:6.5.9":
   version: 6.5.9
   resolution: "@storybook/client-logger@npm:6.5.9"
   dependencies:
     core-js: ^3.8.2
     global: ^4.4.0
   checksum: 5b72d93a57fae8d188bb40db0a3af3ce9f3ccc58751e90d38e0786b58f26a5358d10339916455646a8d60e2cc749d761990927fdeb06e5f09e68d48fe50a5de7
+  languageName: node
+  linkType: hard
+
+"@storybook/client-logger@npm:^6.4.0":
+  version: 6.5.8
+  resolution: "@storybook/client-logger@npm:6.5.8"
+  dependencies:
+    core-js: ^3.8.2
+    global: ^4.4.0
+  checksum: 6d85471e5f987708ffd35b420651715f433213889b473bf74e3190194d912ad941bb0c01824f968191e75ae12a696f13ecd93d10938f5d472aa912cb0a994d16
   languageName: node
   linkType: hard
 
