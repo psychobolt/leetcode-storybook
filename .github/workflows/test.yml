@@ -11,9 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
-      - uses: snok/install-poetry@v1
+      - uses: abatilo/actions-poetry@v2
       - run: yarn install
         shell: bash
       - run: yarn flow-typed-install
