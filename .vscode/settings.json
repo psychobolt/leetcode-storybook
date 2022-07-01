@@ -27,5 +27,7 @@
     "javascript"
   ],
   "stylelint.configFile": "./.stylelintrc.json",
-  "flow.pathToFlow": "${workspaceFolder}/.yarn/sdks/.bin/flow"
+  "flow.pathToFlow": "${workspaceFolder}/.yarn/sdks/.bin/flow",
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true
 }

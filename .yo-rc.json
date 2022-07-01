@@ -2,10 +2,17 @@
   "generator-leetcode-storybook": {
     "problem": {
       "$747": {
-        "path": "DataStructure/Array/1D"
+        "path": "DataStructure/Array/1D",
+        "languages": [
+          "javascript"
+        ]
       },
       "$724": {
-        "path": "DataStructure/Array/1D"
+        "path": "DataStructure/Array/1D",
+        "languages": [
+          "javascript",
+          "python"
+        ]
       },
       "$66": {
         "path": "DataStructure/Array/1D"

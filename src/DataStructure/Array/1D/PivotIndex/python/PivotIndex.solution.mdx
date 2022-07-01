@@ -1,0 +1,88 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import solution from './pivotIndex.py?file';
+import code from './pivotIndex.py?raw';
+import json from '../testCases.json?file';
+import testCases from './testCases.py?file';
+
+export const c0 = 'cases[0]';
+
+<Meta title="Data Structure/Array/1D/[724] Find Pivot Index/Solution/Python" />
+
+# Solution
+
+Modify the solution file `./pivotIndex.py` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0 - O(n)" parameters={{ docs: { source: { code } } }} inline={false} height="130px">
+    <py-env>
+    {`
+      - paths:
+        - ${json}
+        - ${testCases}
+        - ${solution}
+    `}
+    </py-env>
+    <div>
+      <div>Input: </div>
+      <py-script>
+      {`
+        from testCases import cases
+        print(${c0}['input'])
+      `}
+      </py-script>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <py-script>
+      {`
+        from testCases import cases, runTestCase
+        from pivotIndex import Solution
+        solution = Solution()
+        print(runTestCase(solution.pivotIndex, ${c0}))
+      `}
+      </py-script>
+    </div>
+  </Story>
+</Canvas>
+
+## Explanation
+
+To find a O(n) time algorithm, we partition the `total` sum of the number list `nums` at every pivot point.
+
+```python
+total = sum(nums) # we will partition this value
+```
+
+For example, at pivot `i`, the `right` sum is equal to the `total` minus the pivot value (`nums[i]`) and `left` sum.
+
+```python
+right = total - nums[i] - left
+```
+
+Left is the sum of numbers before `nums[i]`. For the left sum, we can accumulate after each partition.
+
+```python
+for i in range(len(nums)):
+  right = total - nums[i] - left
+  left += nums[i]
+```
+
+Which means the very first left sum is 0. Lets initialize it outside the loop.
+
+```python
+left = 0
+# loop after...
+```
+
+Each time we calculate the right sum, we can compare against the left. If it is equal, we passed our search's condition. Else, the loop finishes and we return -1.
+
+```python
+for i in range(len(nums)):
+  right = total - nums[i] - left
+  # if (left == right) return i
+  left += nums[i]
+# return -1
+```

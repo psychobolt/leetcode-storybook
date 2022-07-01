@@ -1,5 +1,9 @@
 import badgesConfig from './leetcode-badges.js';
 
+if (process.env.BABEL_ENV !== 'test') {
+  import('./highligher.js');
+}
+
 export const parameters = {
   viewMode: 'docs',
   previewTabs: { canvas: { hidden: true } },

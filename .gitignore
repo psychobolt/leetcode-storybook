@@ -20,6 +20,7 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+.coverage
 *.lcov
 
 # nyc test coverage
@@ -116,3 +117,7 @@ storybook-static
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# python
+.pytest_cache
+__pycache__
