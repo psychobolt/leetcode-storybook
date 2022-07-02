@@ -11,15 +11,16 @@ jobs:
     steps:
       # setup
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-          cache: 'poetry'
-      - uses: snok/install-poetry@v1
       - run: yarn install
         shell: bash
       - run: yarn flow-typed-install
         shell: bash
+      - run: pipx install poetry
+        shell: bash
+      - uses: actions/cache@v3
+        with:
+          path: ./.venv
+          key: venv-${{ hashFiles('./poetry.lock') }}
       - run: poetry install
         shell: bash
       # run linting
@@ -33,11 +34,12 @@ jobs:
     steps:
       # setup
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - run: pipx install poetry
+        shell: bash
+      - uses: actions/cache@v3
         with:
-          python-version: '3.x'
-          cache: 'poetry'
-      - uses: snok/install-poetry@v1
+          path: ./.venv
+          key: venv-${{ hashFiles('./poetry.lock') }}
       - run: poetry install
         shell: bash
       # run tests
