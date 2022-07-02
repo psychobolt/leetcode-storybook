@@ -9,10 +9,12 @@ jobs:
     name: "Lint Sources"
     runs-on: ubuntu-latest
     steps:
+      # setup
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+          cache: 'poetry'
       - uses: snok/install-poetry@v1
       - run: yarn install
         shell: bash
@@ -20,6 +22,7 @@ jobs:
         shell: bash
       - run: poetry install
         shell: bash
+      # run linting
       - run: yarn flow
         shell: bash
       - run: yarn lint
@@ -28,14 +31,25 @@ jobs:
     name: "Test Project"
     runs-on: ubuntu-latest
     steps:
+      # setup
       - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          cache: 'poetry'
+      - uses: snok/install-poetry@v1
+      - run: poetry install
+        shell: bash
+      # run tests
       - run: yarn test:js --coverage
         shell: bash
+      - run: yarn test:py --cov
       - uses: actions/upload-artifact@v3
         with:
           name: coverage_${{ github.sha }}
           path: |
             ./coverage
+            ./.coverage
           if-no-files-found: error
           retention-days: 1
   coverage:
