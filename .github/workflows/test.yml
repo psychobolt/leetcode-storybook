@@ -64,8 +64,6 @@ jobs:
         with:
           name: coverage_${{ github.sha }}
       - uses: codecov/codecov-action@v3
-        with:
-          files: ./coverage,./.coverage
   chromatic:
     name: "Run Visual Tests"
     runs-on: ubuntu-latest
