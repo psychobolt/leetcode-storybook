@@ -45,7 +45,7 @@ jobs:
       # run tests
       - run: yarn test:js --coverage
         shell: bash
-      - run: yarn test:py --cov --cov-report xml:./coverage/py-cov.xml
+      - run: yarn test:py --cov --cov-report=xml
       - uses: actions/upload-artifact@v3
         with:
           name: coverage_${{ github.sha }}
