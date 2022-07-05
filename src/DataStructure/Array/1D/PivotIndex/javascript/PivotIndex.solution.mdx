@@ -14,7 +14,7 @@ Modify the solution file `./pivotIndex.es3.cjs` to test results.
 ## Default Case
 
 <Canvas withSource="open">
-  <Story name="Case 0 - O(n^2)" parameters={{ docs: { source: { code } } }}>
+  <Story name="Case 0 - O(n)" parameters={{ docs: { source: { code } } }}>
     <div>
       <div>Input: </div>
       <div>{JSON.stringify(c0.input)}</div>
@@ -29,84 +29,49 @@ Modify the solution file `./pivotIndex.es3.cjs` to test results.
 
 ## Explanation
 
-First we create our indices.
-```js
-var pivot;
-var i;
-```
+To find a O(n) time algorithm, we partition the `total` sum of the number list `nums` at every pivot index.
 
-We want to check every position of the array or until a `pivot` is found, where `left` sum is equal to `right` sum.
 ```js
-var pivot;
-var i;
-for (pivot = 0; pivot < nums.length; pivot += 1) {
-  // ...
+var total = 0; // we will partition this value
+for (i = 0; i < nums.length; i += 1) {
+  total += nums[i];
 }
 ```
 
-We need to evaluate each side. So we create two temporary variables for storing `left` and `right` sums.
+For example, at pivot `i`, the `right` sum is equal to the `total` minus the pivot value (`nums[i]`) and `left` sum.
+
 ```js
-var pivot;
-var left;
-var right;
-for (pivot = 0; pivot < nums.length; pivot += 1) {
-  left = 0;
-  right = 0;
-  // calculate left sum
-  // calculate right sum
-}
+right = total - nums[i] - left;
 ```
 
-### Left Sum
+Left is the sum of numbers before `nums[i]`. For the left sum, we can accumulate after each partition.
 
-To find the `left` sum is simply the range of values from `0` to `pivot`.
 ```js
-for (i = 0; i < pivot; i += 1) {
+for (i = 0; i < nums.length; i += 1) {
+  right = total - nums[i] - left;
   left += nums[i];
 }
 ```
 
-### Right Sum
+Don't forget to initialize the left sum to 0.
 
-The `right` sum is the range of values from `pivot + 1` to `nums.length`.
 ```js
-for (i = pivot + 1; i < nums.length; i += 1) {
-  right += nums[i];
-}
+var left = 0;
 ```
 
-### "Sum It All Up"
+Each time we calculate the right sum, we can compare against the left. If it is equal, we passed our search's condition. Else, the loop finishes and we return -1.
 
 ```js
-var pivot;
-var left;
-var right;
-for (pivot = 0; pivot < nums.length; pivot += 1) {
-  left = 0;
-  right = 0;
-  // calculate left sum
-  for (i = 0; i < pivot; i += 1) {
-    left += nums[i];
+for (i = 0; i < nums.length; i += 1) {
+  right = total - nums[i] - left;
+  /*
+  if (left === right) {
+    return i;
   }
-  // calculate right sum
-  for (i = pivot + 1; i < nums.length; i += 1) {
-    right += nums[i];
-  }
+  */
+  left += nums[i];
+  /*
+  return -1;
+  */
 }
-```
-
-That's all folks...
-
-Just kidding! &#128539; We need to check if `left` sum is equal `right` sum and then return the pivot.
-
-That's easy!
-```js
-if (left === right) {
-  return pivot;
-}
-```
-
-Don't forget to return if we exit from the loop. In that case we did not find a pivot.
-```js
-return -1;
 ```

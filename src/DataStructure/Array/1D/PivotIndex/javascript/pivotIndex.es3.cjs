@@ -11,24 +11,19 @@
  * @return {number}
  */
 var pivotIndex = function (nums) {
-  var pivot;
   var i;
-  var left;
+  var total = 0;
+  var left = 0;
   var right;
-  for (pivot = 0; pivot < nums.length; pivot += 1) {
-    left = 0;
-    right = 0;
-    // calculate left sum
-    for (i = 0; i < pivot; i += 1) {
-      left += nums[i];
-    }
-    // calculate right sum
-    for (i = pivot + 1; i < nums.length; i += 1) {
-      right += nums[i];
-    }
+  for (i = 0; i < nums.length; i += 1) {
+    total += nums[i];
+  }
+  for (i = 0; i < nums.length; i += 1) {
+    right = total - nums[i] - left;
     if (left === right) {
-      return pivot;
+      return i;
     }
+    left += nums[i];
   }
   return -1;
 };
