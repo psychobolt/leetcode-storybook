@@ -6,7 +6,7 @@
 
 # @lc code=start
 class Node:
-    def __init__(self, val, next = None):
+    def __init__(self, val, next=None):
         self.val = val
         self.next = next
 
