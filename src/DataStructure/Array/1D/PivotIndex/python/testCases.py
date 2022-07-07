@@ -9,5 +9,5 @@ except FileNotFoundError:
 cases = json.load(data)
 
 
-def runTestCase(findPivot, testCase):
-    return findPivot(testCase['input'])
+def runTestCase(runSolution, testCase):
+    return runSolution(testCase['input'])

@@ -1,4 +1,5 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
 import solution from './pivotIndex.es3.cjs';
 import code from './pivotIndex.es3.cjs?raw';
 import runTestCase, { cases } from './testCases.js';
@@ -14,7 +15,7 @@ Modify the solution file `./pivotIndex.es3.cjs` to test results.
 ## Default Case
 
 <Canvas withSource="open">
-  <Story name="Case 0 - O(n)" parameters={{ docs: { source: { code } } }}>
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
     <div>
       <div>Input: </div>
       <div>{JSON.stringify(c0.input)}</div>

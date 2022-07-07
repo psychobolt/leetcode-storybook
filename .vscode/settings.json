@@ -29,5 +29,10 @@
   "stylelint.configFile": "./.stylelintrc.json",
   "flow.pathToFlow": "${workspaceFolder}/.yarn/sdks/.bin/flow",
   "python.linting.flake8Enabled": true,
-  "python.linting.enabled": true
+  "python.linting.enabled": true,
+  "python.testing.pytestArgs": [
+    "."
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
 }

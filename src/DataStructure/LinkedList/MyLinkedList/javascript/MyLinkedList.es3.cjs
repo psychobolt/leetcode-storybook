@@ -1,3 +1,11 @@
+/*
+ * @lc app=leetcode id=707 lang=javascript
+ *
+ * [707] Design Linked List
+ */
+
+// @lc code=start
+
 var Node = function Node(val, next) {
   this.val = val;
   this.next = next || null;
@@ -64,11 +72,11 @@ MyLinkedList.prototype.addAtIndex = function addAtIndex(index, val) {
   var node;
   if (index === 0) return this.addAtHead(val);
   if (this.head === null) return null;
-  node = new Node(val);
   for (i = 1, prev = this.head, ptr = prev.next; ptr != null; i += 1, prev = ptr, ptr = ptr.next) {
     if (index === i) break;
   }
   if (index <= (i + 1)) {
+    node = new Node(val);
     prev.next = node;
     node.next = ptr;
   }

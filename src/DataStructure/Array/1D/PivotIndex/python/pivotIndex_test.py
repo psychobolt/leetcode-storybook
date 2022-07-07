@@ -1,6 +1,6 @@
 import pytest
-from pivotIndex import Solution
-from testCases import runTestCase, cases
+from PivotIndex.python.pivotIndex import Solution
+from PivotIndex.python.testCases import runTestCase, cases
 
 
 @pytest.mark.parametrize('case', cases)

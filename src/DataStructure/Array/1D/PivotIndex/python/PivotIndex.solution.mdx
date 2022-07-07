@@ -1,4 +1,5 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
 import solution from './pivotIndex.py?file';
 import code from './pivotIndex.py?raw';
 import json from '../testCases.json?file';
@@ -15,7 +16,7 @@ Modify the solution file `./pivotIndex.py` to test results.
 ## Default Case
 
 <Canvas withSource="open">
-  <Story name="Case 0 - O(n)" parameters={{ docs: { source: { code } } }} inline={false} height="130px">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }} inline={false} height="130px">
     <py-env>
     {`
       - paths:
