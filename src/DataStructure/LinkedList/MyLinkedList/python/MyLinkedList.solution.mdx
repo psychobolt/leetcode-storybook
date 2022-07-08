@@ -47,3 +47,185 @@ Modify the solution file `./MyLinkedList.py` to test results.
     </div>
   </Story>
 </Canvas>
+
+## Explanation
+
+A linked list is a data structure that consist of a collection of nodes.
+```python
+class Node:
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+```
+
+Each node has a value and a pointer to the next `Node` in the list.
+```python
+list = Node(1 Node(2, Node(3)) # 1 -> 2 -> 3 -> None
+print(list.val) # prints 1
+list.next #return Node(2, Node(3))
+```
+
+We can represent this structure in a class `MyLinkedList`, which additionally provides utility actions on the head of the list.
+
+```python
+list = MyLinkedList()
+list.addToHead(1) #list.head = Node(1)
+list.addToTail(2) #list.head = Node(1, Node(2))
+list.addToTail(3) #list.head = Node(1 Node(2, Node(3))
+```
+
+```python
+class MyLinkedList:
+    def __init__(self): # constructor
+        self.head = None
+```
+
+We can iterate the list by keeping a pointer to the current node and update it with the next Node, until the pointer is empty.
+```python
+ptr = list.head
+while ptr is not None:
+    ptr = ptr.next
+```
+
+Sometimes we may need to stop iteration, whenever we reach a condition.
+```python
+ptr = list.head
+while ptr is not None:
+    #if cond():
+        #return # or #break
+    ptr = ptr.next
+```
+
+At times we can assume there is already a head, therefore we initialize the pointer to the next Node.
+```python
+ptr = list.head.next
+while ptr is not None:
+    ptr = ptr.next
+```
+
+That will be useful in the case where we need to access the previous Node instead of the current.
+```python
+prev = list.head
+ptr = prev.next # same as #ptr = list.head.next
+while ptr is not None:
+    prev = ptr
+    # do something with `prev`
+    ptr = ptr.next
+# do something with `prev`
+```
+
+> With the additional pointer `prev`, we can get last Node in the list after the iteration finishes.
+```python
+prev = ptr # pointer will eventually be the last node, when ptr.next is empty
+```
+
+### Methods
+
+#### `get(self, index: int)` -> int
+
+Returns the value of a node at `index`. Return `-1` if out of range.
+
+##### Implementation
+
+```python
+def get(self, index: int) -> int:
+    i = 0 # initalize iteration index `i`
+    ptr = self.head
+    while ptr is not None:
+        if index == i:
+            return ptr.val # return the Node value if we reach index `i`
+        ptr = ptr.next
+        i += 1 # increment `i` each time we update the pointer.
+    return -1
+```
+
+#### `addAtHead(self, val: int) -> None`
+
+Create a new Node with `val` and set it to the head. If there is already a head, make sure to set the `next` pointer of the new head.
+
+##### Implementation
+
+```python
+def addAtHead(self, val: int) -> None:
+    if self.head is None:
+        self.head = Node(val)
+    else:
+        self.head = Node(val, self.head) # `self.head.next` is now the old head
+```
+
+#### `addAtTail(self, val: int) -> None`
+
+If the head is empty, add to the head using `addAtHead(val)`. Otherwise, iterate assuming an head exists.
+
+##### Implementation
+
+```python
+def addAtTail(self, val: int) -> None:
+    if self.head is None:
+        self.addAtHead(val)
+    else:
+        prev = self.head
+        ptr = prev.next
+        while ptr is not None:
+            prev = ptr
+            ptr = ptr.next
+        prev.next = Node(val) # the last Node
+```
+
+#### `addAtIndex(self, index: int, val: int) -> None`
+
+Update `prev.next` with the new Node at `index == i`. If `index` is 0, we reuse `addAtHead(val)`. If the list is empty, there is no existing data to be modified.
+
+##### Implementation
+
+```python
+def addAtIndex(self, index: int, val: int) -> None:
+    if index == 0:
+        return self.addAtHead(val)
+    if self.head is None:
+        return None # do nothing, empty list
+    i = 1
+    prev = self.head
+    ptr = prev.next
+    while ptr is not None:
+        if index == i:
+            break # exit early, index is reached
+        i += 1 # increment `i`
+        prev = ptr
+        ptr = ptr.next
+    if index <= i + 1: # check to ensure the index is in range of the list
+        node = Node(val) # new Node
+        prev.next = node # update
+        node.next = ptr # also point the new Node's next (or `ptr` in this case)
+```
+
+> For clarity, we could also rewrite the last few lines to:
+```python
+temp = prev.next
+prev.next = node # update
+node.next = temp
+```
+However, it creates a unnecessary variable `temp`.
+
+#### `deleteAtIndex(self, index: int) -> None`
+
+##### Implementation
+
+```python
+def deleteAtIndex(self, index: int) -> None:
+    if self.head is None:
+        return None
+    if index == 0:
+        self.head = self.head.next
+        return None
+    i = 1
+    prev = self.head
+    ptr = prev.next
+    while ptr is not None:
+        if index == i:
+            prev.next = ptr.next
+            break
+        i += 1
+        prev = ptr
+        ptr = ptr.next
+```
