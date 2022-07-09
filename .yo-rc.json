@@ -1,6 +1,7 @@
 {
   "generator-leetcode-storybook": {
     "problem": {
+<<<<<<< HEAD
       "$747": {
         "path": "DataStructure/Array/1D",
         "languages": [
@@ -22,6 +23,10 @@
       },
       "$707": {
         "path": "DataStructure/LinkedList",
+=======
+      "$1": {
+        "path": "Problems",
+>>>>>>> Upgrade generator-leetcode-problem package
         "languages": [
           "javascript",
           "python"
