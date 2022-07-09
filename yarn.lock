@@ -12349,13 +12349,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"generator-leetcode-storybook@npm:0.0.5":
-  version: 0.0.5
-  resolution: "generator-leetcode-storybook@npm:0.0.5"
+"generator-leetcode-storybook@npm:0.0.7":
+  version: 0.0.7
+  resolution: "generator-leetcode-storybook@npm:0.0.7"
   dependencies:
     espree: 9.3.2
     execa: 6.1.0
-    glob: 8.0.1
+    glob: 8.0.3
     isbinaryfile: 5.0.0
     json5: 2.2.1
     require-from-string: 2.0.2
@@ -12364,7 +12364,7 @@ __metadata:
     yeoman-generator: 5.6.1
   peerDependencies:
     vsc-leetcode-cli: "*"
-  checksum: c37c6df6dc2f06c39860c9cc29601c0d4576b963ec2cbe4800aa7b50c7744d871a20184f555fbf797ec4effb32c9fc83440b42e07de15b2c5e185e8f8bc63fae
+  checksum: 26cb4b00b6c4bfd01b77339310d75464e307641a6cfbba99f6d5601cac2591087d6cdd1a79e54fac7e894afb5cedcef9dfbb8fb1c456c0633c97535c2ecde30e
   languageName: node
   linkType: hard
 
@@ -12541,17 +12541,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:8.0.1, glob@npm:^8.0.1":
-  version: 8.0.1
-  resolution: "glob@npm:8.0.1"
+"glob@npm:8.0.3":
+  version: 8.0.3
+  resolution: "glob@npm:8.0.3"
   dependencies:
     fs.realpath: ^1.0.0
     inflight: ^1.0.4
     inherits: 2
     minimatch: ^5.0.1
     once: ^1.3.0
-    path-is-absolute: ^1.0.0
-  checksum: 7ac782f3ef1c08005884447479e68ceb0ad56997eb2003e1e9aefae71bad3cb48eb7c49190d3d6736f2ffcd8af4985d53a46831b3d5e0052cc5756822a38b61a
+  checksum: 50bcdea19d8e79d8de5f460b1939ffc2b3299eac28deb502093fdca22a78efebc03e66bf54f0abc3d3d07d8134d19a32850288b7440d77e072aa55f9d33b18c5
   languageName: node
   linkType: hard
 
@@ -12566,6 +12565,20 @@ __metadata:
     once: ^1.3.0
     path-is-absolute: ^1.0.0
   checksum: 78a8ea942331f08ed2e055cb5b9e40fe6f46f579d7fd3d694f3412fe5db23223d29b7fee1575440202e9a7ff9a72ab106a39fee39934c7bedafe5e5f8ae20134
+  languageName: node
+  linkType: hard
+
+"glob@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "glob@npm:8.0.1"
+  dependencies:
+    fs.realpath: ^1.0.0
+    inflight: ^1.0.4
+    inherits: 2
+    minimatch: ^5.0.1
+    once: ^1.3.0
+    path-is-absolute: ^1.0.0
+  checksum: 7ac782f3ef1c08005884447479e68ceb0ad56997eb2003e1e9aefae71bad3cb48eb7c49190d3d6736f2ffcd8af4985d53a46831b3d5e0052cc5756822a38b61a
   languageName: node
   linkType: hard
 
@@ -15785,7 +15798,7 @@ __metadata:
     execa: 6.1.0
     flow-bin: 0.176.2
     flow-typed: 3.8.0
-    generator-leetcode-storybook: 0.0.5
+    generator-leetcode-storybook: 0.0.7
     http-server: 14.1.1
     isbinaryfile: 5.0.0
     jest: 27.5.1
