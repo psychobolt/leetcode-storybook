@@ -183,7 +183,7 @@ def addAtIndex(self, index: int, val: int) -> None:
     if index == 0:
         return self.addAtHead(val)
     if self.head is None:
-        return None # do nothing, empty list
+        return None # do nothing, the list is empty
     i = 1
     prev = self.head
     ptr = prev.next
@@ -209,23 +209,26 @@ However, it creates a unnecessary variable `temp`.
 
 #### `deleteAtIndex(self, index: int) -> None`
 
+Update `prev.next` so it no longer points to the Node at `index == i`. If the Node at `index` exists, we can point previous's to the deleted next pointer. For deleting a Node at 0, there is no previous Node. Therefore, we can simply replace the head.
+
 ##### Implementation
 
 ```python
 def deleteAtIndex(self, index: int) -> None:
     if self.head is None:
-        return None
+        return None # do nothing, the list is empty
     if index == 0:
-        self.head = self.head.next
+        self.head = self.head.next # replace the head, it is now the Node next in the list
         return None
     i = 1
     prev = self.head
     ptr = prev.next
     while ptr is not None:
         if index == i:
-            prev.next = ptr.next
+            #toDelete = ptr
+            prev.next = ptr.next # point previous's to the deleted next pointer
             break
-        i += 1
+        i += 1 # increment
         prev = ptr
         ptr = ptr.next
 ```
