@@ -27,3 +27,29 @@ Modify the solution file `./dominantIndex.es3.cjs` to test results.
     </div>
   </Story>
 </Canvas>
+
+### Explanation
+
+We first find the largest number with its index using a simple for loop on the unsorted list.
+
+```js
+var i;
+var largestNum = -1;
+var largestIndex = -1;
+var num;
+for (i = 0; i < nums.length; i += 1) {
+  num = nums[i];
+  if (largestNum < num) {
+    largestNum = num;
+    largestIndex = i;
+  }
+}
+```
+
+Then in the second for loop, compare the largest number at `largestIndex`. If there is at least a number that is not twice the largest number, we exit the loop. Also be sure to avoid evaluating at the largestIndex.
+
+```js
+for (i = 0; i < nums.length; i += 1) {
+  if (i !== largestIndex && 2 * nums[i] > largestNum) return -1;
+}
+```
