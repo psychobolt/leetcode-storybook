@@ -23,7 +23,11 @@
         ]
       },
       "$498": {
-        "path": "DataStructure/Array/2D"
+        "path": "DataStructure/Array/2D",
+        "languages": [
+          "javascript",
+          "python"
+        ]
       },
       "$707": {
         "path": "DataStructure/LinkedList",
