@@ -12,12 +12,9 @@
 var runningSum = function (nums) {
   var i;
   var result = [];
-  for (i = 0; i < nums.length; i += 1) {
-    if (i === 0) {
-      result.push(nums[i]);
-    } else {
-      result.push(result[i - 1] + nums[i]);
-    }
+  result.push(nums[0]);
+  for (i = 1; i < nums.length; i += 1) {
+    result.push(result[i - 1] + nums[i]);
   }
   return result;
 };
