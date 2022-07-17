@@ -1,4 +1,4 @@
-![main_logo](https://raw.githubusercontent.com/psychobolt/leetcode-storybook/master/logo.png)
+![main_logo](https://raw.githubusercontent.com/psychobolt/leetcode-storybook/main/logo.png)
 
 # LeetCode Storybook
 
