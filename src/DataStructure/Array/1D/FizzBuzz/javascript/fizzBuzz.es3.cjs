@@ -12,12 +12,16 @@
 var fizzBuzz = function (n) {
   var i;
   var result = [];
+  var divisibleBy3;
+  var divisibleBy5;
   for (i = 1; i <= n; i += 1) {
-    if (i % 3 === 0 && i % 5 === 0) {
+    divisibleBy3 = i % 3 === 0;
+    divisibleBy5 = i % 5 === 0;
+    if (divisibleBy3 && divisibleBy5) {
       result.push('FizzBuzz');
-    } else if (i % 3 === 0) {
+    } else if (divisibleBy3) {
       result.push('Fizz');
-    } else if (i % 5 === 0) {
+    } else if (divisibleBy5) {
       result.push('Buzz');
     } else {
       result.push(i + '');
