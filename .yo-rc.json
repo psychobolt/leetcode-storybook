@@ -51,13 +51,15 @@
       "$412": {
         "path": "DataStructure/Array/1D",
         "languages": [
-          "javascript"
+          "javascript",
+          "python"
         ]
       },
       "$1342": {
         "path": "Math",
         "languages": [
-          "javascript"
+          "javascript",
+          "python"
         ]
       }
     }
