@@ -53,6 +53,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$1342": {
+        "path": "Math",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
