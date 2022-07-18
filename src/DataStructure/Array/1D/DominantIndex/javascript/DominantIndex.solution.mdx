@@ -53,3 +53,7 @@ for (i = 0; i < nums.length; i += 1) {
   if (i !== largestIndex && 2 * nums[i] > largestNum) return -1;
 }
 ```
+
+### Analysis
+
+The time complexity for running both loops is '2n' since we require to iterate each number in the list twice. Therefore the time complexity is simply O(n). The space complexity is O(1) because there is only space proportional as the input given to us.
