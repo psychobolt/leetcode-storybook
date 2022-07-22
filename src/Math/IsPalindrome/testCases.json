@@ -10,5 +10,9 @@
   {
     "input": 10,
     "expected": false
+  },
+  {
+    "input": 1001,
+    "expected": true
   }
 ]

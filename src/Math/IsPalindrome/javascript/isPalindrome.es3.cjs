@@ -10,10 +10,17 @@
  * @return {boolean}
  */
 var isPalindrome = function (x) {
+  var left = x;
+  var reversed = 0;
   if (x < 0) return false;
   if (x < 10) return true;
   if (x === 10) return false;
-  return true;
+  while (left > 9) {
+    reversed = reversed * 10 + (left % 10);
+    left = Math.floor(left / 10);
+  }
+  reversed = reversed * 10 + left;
+  return x === reversed;
 };
 // @lc code=end
 
