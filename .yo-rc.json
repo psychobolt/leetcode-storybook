@@ -61,6 +61,12 @@
           "javascript",
           "python"
         ]
+      },
+      "$9": {
+        "path": "Math",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
