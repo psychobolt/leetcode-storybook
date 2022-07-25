@@ -1,0 +1,68 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+import solution from './isPalindrome.es3.cjs';
+import code from './isPalindrome.es3.cjs?raw';
+import runTestCase, { cases } from './testCases.js';
+
+export const c0 = cases[0];
+
+<Meta title="Math/Easy/[9] Palindrome Number/Solution/Javascript" />
+
+# Solution
+
+Modify the solution file `./isPalindrome.es3.cjs` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <div>Input: </div>
+      <div>{JSON.stringify(c0.input)}</div>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <div>{JSON.stringify(runTestCase(solution, c0))}</div>
+    </div>
+  </Story>
+</Canvas>
+
+### Approach
+
+- `/` is integer division
+- `x` is a number
+- `x % 10` gives the remiander or right most digit. E.g. 1221 % 10 = 1
+- `x / 10` gives the left digits
+
+Example:
+```
+number = 1221
+left = 1221 / 10 = 122
+right = 1221 % 10 = 1
+```
+
+Each time we get the right, we have to reverse the value:
+1 * 10 = 10
+
+The next number for the right is 2. e.g.
+```
+left = 122 / 10 = 12
+right = 122 % 10 = 2
+```
+
+We add the previous reversed number. Ensure to multiply by 10, so...
+`10 * 10 + 2 * 10 = 120`
+
+... repeat
+```
+left = 12 / 10 = 1
+right = 12 % 10 = 2
+
+120 * 10 + 2 * 10 = 1220
+```
+
+1 is a single digit. We just add back...
+`1220 + 1 = 1221`
+
+If the reversed number equals to the orignal, we pass the test!

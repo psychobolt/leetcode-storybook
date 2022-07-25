@@ -1,0 +1,29 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+import solution from './MyLinkedList.es3.cjs';
+import code from './MyLinkedList.es3.cjs?raw';
+import runTestCase, { cases } from './testCases.js';
+
+export const c0 = cases[0];
+
+<Meta title="Data Structure/Linked List/Medium/[707] Design Linked List/Solution/Javascript" />
+
+# Solution
+
+Modify the solution file `./MyLinkedList.es3.cjs` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <div>Input: </div>
+      <div>{JSON.stringify(c0.input)}</div>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <div>{JSON.stringify(runTestCase(solution, c0))}</div>
+    </div>
+  </Story>
+</Canvas>

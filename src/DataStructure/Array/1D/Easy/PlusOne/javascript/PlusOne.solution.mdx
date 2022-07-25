@@ -1,0 +1,86 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+import solution from './plusOne.es3.cjs';
+import code from './plusOne.es3.cjs?raw';
+import runTestCase, { cases } from './testCases.js';
+
+export const c0 = cases[0];
+
+<Meta title="Data Structure/Array/1D/Easy/[66] Plus One/Solution/Javascript" />
+
+# Solution
+
+Modify the solution file `./plusOne.es3.cjs` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <div>Input: </div>
+      <div>{JSON.stringify(c0.input)}</div>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <div>{JSON.stringify(runTestCase(solution, c0))}</div>
+    </div>
+  </Story>
+</Canvas>
+
+### Approach
+
+To increment the far right digit, we should refer to the last index of the array. For example, the following adds 1 to the last digit.
+```js
+digits[digits.length - 1] += 1
+```
+
+However, we have to handle the case where the right most digit is a 9. In this case we need to increment the previous digit instead. For example,
+```js
+var lastIndex = digits.length - 1;
+digits[lastIndex] = 0; // reset to 0
+digits[lastIndex - 1] += 1;
+```
+
+We should check all cases of digit where there is a 9, for instance 999 + 1 = 1000. Note, there are more consecutive 9s to reset. Therefore, we require a reverse iteration until a digit is not 9.
+```js
+var i = 0;
+for (i = digits.length - 1; i >= 0; i -= 1) { // i, from last index to 0
+  digit = digits[i];
+  if (digit === 9) {
+    digits[i] = 0;
+  } else { // if not a 9, plus 1 and return
+    digits[i] = digit + 1;
+    break; //return digits;
+  }
+}
+```
+
+Note in the case we can add 1 to a digit (e.g. 19 + 1 = 20, means we do not require shifting), the function should return the result. For the input 999, we also expect to shift the digits array by 1 and add 1 to the beginning.
+
+First, increase the digits array length by 1.
+```js
+digits.push(1);
+```
+
+Starting from left to right of the original array (0 to `digits.length - 1`), store the next value in a temp variable and move the current value to the next position.
+```js
+digits.push(1);
+for (i = 0; i < digits.length - 1; i += 1) {
+  temp = digits[i + 1]; // i + 1, is the next position
+  digits[i + 1] = digits[i];
+}
+```
+
+Running the above loop for digit 9: 9 -> 91 -> 99. We are not done yet! The last step is swapping the beginning digit with the temp (last saved digit).
+```js
+digits[0] = temp; // or // digits[0] = 1
+```
+
+Our algorithm should generate 9 + 1 = 10 or 99 + 1 = 100 or 999 + 1 = 1000.
+
+### Analysis
+
+### Analysis
+
+Time complexity to iterate the numbers of digits twice - 2n - 2 or O(n). We only require space proportional to input to compute, O(1).

@@ -2,86 +2,86 @@
   "generator-leetcode-storybook": {
     "problem": {
       "$747": {
-        "path": "DataStructure/Array/1D",
+        "path": "DataStructure/Array/1D/Easy/Easy",
         "languages": [
           "javascript",
           "python"
         ]
       },
       "$724": {
-        "path": "DataStructure/Array/1D",
+        "path": "DataStructure/Array/1D/Easy",
         "languages": [
           "javascript",
           "python"
         ]
       },
       "$66": {
-        "path": "DataStructure/Array/1D",
+        "path": "DataStructure/Array/1D/Easy",
         "languages": [
           "javascript",
           "python"
         ]
       },
       "$498": {
-        "path": "DataStructure/Array/2D",
+        "path": "DataStructure/Array/2D/Medium",
         "languages": [
           "javascript",
           "python"
         ]
       },
       "$707": {
-        "path": "DataStructure/LinkedList",
+        "path": "DataStructure/LinkedList/Medium",
         "languages": [
           "javascript",
           "python"
         ]
       },
       "$1480": {
-        "path": "DataStructure/Array/1D",
+        "path": "DataStructure/Array/1D/Easy",
         "languages": [
           "javascript"
         ]
       },
       "$1672": {
-        "path": "DataStructure/Array/2D",
+        "path": "DataStructure/Array/2D/Easy",
         "languages": [
           "javascript"
         ]
       },
       "$412": {
-        "path": "DataStructure/Array/1D",
+        "path": "DataStructure/Array/1D/Easy",
         "languages": [
           "javascript",
           "python"
         ]
       },
       "$1342": {
-        "path": "Math",
+        "path": "Math/Easy",
         "languages": [
           "javascript",
           "python"
         ]
       },
       "$9": {
-        "path": "Math",
+        "path": "Math/Easy",
         "languages": [
           "javascript"
         ]
       },
       "$485": {
-        "path": "DataStructure/Array/1D",
+        "path": "DataStructure/Array/1D/Easy",
         "languages": [
           "javascript"
         ]
       },
       "$1295": {
-        "path": "DataStructure/Array/1D",
+        "path": "DataStructure/Array/1D/Easy",
         "languages": [
           "javascript"
         ]
       },
       "$1089": {
-        "path": "DataStructure/Array/1D",
+        "path": "DataStructure/Array/1D/Easy",
         "languages": [
           "javascript"
         ]

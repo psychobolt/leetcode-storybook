@@ -1,0 +1,59 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+import solution from './dominantIndex.es3.cjs';
+import code from './dominantIndex.es3.cjs?raw';
+import runTestCase, { cases } from './testCases.js';
+
+export const c0 = cases[0];
+
+<Meta title="Data Structure/Array/1D/Easy/[747] Largest Number At Least Twice of Others/Solution/Javascript" />
+
+# Solution
+
+Modify the solution file `./dominantIndex.es3.cjs` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <div>Input: </div>
+      <div>{JSON.stringify(c0.input)}</div>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <div>{JSON.stringify(runTestCase(solution, c0))}</div>
+    </div>
+  </Story>
+</Canvas>
+
+### Approach
+
+We first find the largest number with its index using a simple for loop on the unsorted list.
+
+```js
+var i;
+var largestNum = -1;
+var largestIndex = -1;
+var num;
+for (i = 0; i < nums.length; i += 1) {
+  num = nums[i];
+  if (largestNum < num) {
+    largestNum = num;
+    largestIndex = i;
+  }
+}
+```
+
+Then in the second for loop, compare the largest number at `largestIndex`. If there is at least a number that is not twice the largest number, we exit the loop. Also be sure to avoid evaluating at the largestIndex.
+
+```js
+for (i = 0; i < nums.length; i += 1) {
+  if (i !== largestIndex && 2 * nums[i] > largestNum) return -1;
+}
+```
+
+### Analysis
+
+The time complexity for running both loops is '2n' since we require to iterate each number in the list twice. Therefore the time complexity is simply O(n). The space complexity is O(1) because there is only space proportional as the input given to us.

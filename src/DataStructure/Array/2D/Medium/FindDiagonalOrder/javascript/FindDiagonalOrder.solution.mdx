@@ -1,0 +1,132 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import solution from './findDiagonalOrder.es3.cjs';
+import code from './findDiagonalOrder.es3.cjs?raw';
+import runTestCase, { cases } from './testCases.js';
+import example from '../example.png';
+
+export const c0 = cases[0];
+
+<Meta title="Data Structure/Array/2D/Medium/[498] Diagonal Traverse/Solution/Javascript" />
+
+# Solution
+
+Modify the solution file `./findDiagonalOrder.es3.cjs` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <div>Input: </div>
+      <div>{JSON.stringify(c0.input)}</div>
+    </div>
+    <div>
+      <div>Output: </div>
+      <div>{JSON.stringify(runTestCase(solution, c0))}</div>
+    </div>
+  </Story>
+</Canvas>
+
+### Approach
+
+This approach follows what the program ask of us. Using the example array bellow, we can observe:
+<img src={example} alt="example" />
+
+1. Starting from (0, 0), the next position is (0, 1)
+2. Similiar to incrementing a 1D array, we want to move in a predictable direction. In the first case, it is right and up (1, -1).
+
+  Lets define the inital index variables for position (0, 0).
+  ```js
+  var i = 0;
+  var j = 0;
+  ```
+
+  We also define the iteration loop and the flatten result array. We will step every case (k) in the 2D Matrix based on the direction (a, b) and store it in the flatten result array. The length of the matrix or M * N.
+  ```js
+  var m = mat.length;
+  var n = mat[0].length;
+  var result = [];
+  var i = 1; // initial direction
+  var j = -1; // initial direction
+  var k;
+  var a; // increment constant for i
+  var b; // increment constant for j
+  for (k = 0; k < m * n; k += 1) {
+    i += a;
+    j += b;
+    result.push(mat[i][j]; // store each number
+  }
+  ```
+
+3. The constant `a` and `b` will be dynamic, based on the four corners of the matrix as seen in the example. In some cases, we inverse the increment constant(s) or direction because the indices `i` and `j` are out of bounds.
+
+  If we ran our second case `k = 1`, the iteration code will increment `i` and `j` initally to -1 and 1. When `i` is out of bounds, we should inverse (a, b) and revert:
+  ```js
+  if (i < 0) {
+    a *= -1; // inverse by negating
+    b *= -1; // inverse by negating
+    i += 1; // revert
+  }
+  ```
+
+4. What about when `j` is less than 0 for case `k = 3`, changing (1, 0) to (2, -1)? Then we should inverse (a, b) and revert `j` as well.
+  ```js
+  if (j < 0) {
+    a *= -1; // inverse by negating
+    b *= -1; // inverse by negating
+    j += 1; // revert
+  }
+  ```
+
+5. There some cases which the above condition logic will not work. For example, when `k = 9` (changing (3, 0) to (4, -1)). Notice, both `i` and `j` are out of bounds. We cannot run the above logic in order because we will revert also the direction twice or back to the original. Therefore we require a seperate logic, we can define the condition when `i === m`.
+  ```js
+  if (i === m) {
+    a *= -1;
+    b *= -1;
+    i -= 1;
+    j += 1;
+  }
+  ```
+
+  Note the above code also doesn't give what we want. (4, -1) changes to (3, 0). Which is our original case for `k = 9` that was already visited. Thus, we should move an addditonal step.
+  ```js
+  if (i === m) {
+    a *= -1;
+    b *= -1;
+    i -= 1; // revert
+    j += 2; // move an additional step to the right
+  }
+  ```
+
+  6. Also when `k = 14` (changing (0, 4) to (-1, 5)). Similiarily we inverse the direction. In this case, only `i` needs to move a additonal step down.
+  ```js
+  if (j === m) {
+    a *= -1;
+    b *= -1;
+    i += 2; // move an additional step down
+    j -= 1; // revert
+  }
+  ```
+
+7. Putting all the conditions together, we should process `i < 0` and `j < 0` as lowest priority, as what we seen with cases `k = 9` and `k = 14` (both would pass the conditions as well).
+  ```js
+  if (i === m) {
+    a *= -1;
+    b *= -1;
+    i -= 1;
+    j += 2;
+  } else if (j === n) {
+    a *= -1;
+    b *= -1;
+    i += 2;
+    j -= 1;
+  } else if (i < 0) {
+    a *= -1;
+    b *= -1;
+    i += 1;
+  } else if (j < 0) {
+    a *= -1;
+    b *= -1;
+    j += 1;
+  }
+  ```
