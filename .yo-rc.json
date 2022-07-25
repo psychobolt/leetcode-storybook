@@ -67,6 +67,24 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$485": {
+        "path": "DataStructure/Array/1D",
+        "languages": [
+          "javascript"
+        ]
+      },
+      "$1295": {
+        "path": "DataStructure/Array/1D",
+        "languages": [
+          "javascript"
+        ]
+      },
+      "$1089": {
+        "path": "DataStructure/Array/1D",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
