@@ -2,7 +2,7 @@
 
 | Category | Difficulty | Likes | Dislikes |
 | :------: | :--------: | :---: | :------: |
-| algorithms | Medium (56.62%) | 2137 | 529 |
+| algorithms | Medium (56.64%) | 2393 | 556 |
 
 <details>
   <summary><strong>Tags</strong></summary>

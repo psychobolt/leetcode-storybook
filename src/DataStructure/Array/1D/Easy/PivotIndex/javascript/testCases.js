@@ -1,7 +1,7 @@
+import cloneDeep from 'lodash/fp/cloneDeep.js';
+
 import json from '../testCases.json';
 
 export const cases = json;
 
-const runTestCase = (findPivot, { input }) => findPivot(input);
-
-export default runTestCase;
+export default (runSolution, { input }) => runSolution(cloneDeep(input));

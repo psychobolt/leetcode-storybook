@@ -2,7 +2,7 @@
 
 | Category | Difficulty | Likes | Dislikes |
 | :------: | :--------: | :---: | :------: |
-| algorithms | Easy (89.18%) | 2119 | 275 |
+| algorithms | Easy (89.26%) | 2161 | 280 |
 
 <details>
   <summary><strong>Tags</strong></summary>
