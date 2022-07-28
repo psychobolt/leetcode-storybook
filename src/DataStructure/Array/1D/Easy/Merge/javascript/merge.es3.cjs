@@ -13,25 +13,23 @@
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
 var merge = function (nums1, m, nums2, n) {
-  var left = m - 1;
-  var right;
-  var lastIndex = nums1.length - 1;
+  var left = m;
+  var right = n;
+  var i;
   var temp;
-  if (m === 0) {
-    for (left = 0; left < n; left += 1) {
-      nums1[left] = nums2[left];
-    }
-    return nums1;
-  }
-  if (n === 0) return nums1;
-  for (right = n - 1; right >= 0; right -= 1, lastIndex -= 1) {
-    if (nums2[right] > nums1[left]) {
-      nums1[lastIndex] = nums2[right];
-    } else {
-      nums1[lastIndex] = nums1[left];
-      nums1[left] = nums2[right];
-    }
+  for (i = m + n - 1; nums1[i] === 0; i -= 1) {
     if (left > 0) left -= 1;
+    if (right > 0) right -= 1;
+    if (nums2[right] > nums1[left]) {
+      nums1[i] = nums2[right];
+    } else if (nums2[right] < nums1[left]) {
+      nums1[i] = nums1[left];
+      if (n < m) {
+        nums1[left] = 0;
+      } else {
+        nums1[left] = nums2[right];
+      }
+    }
   }
   if (nums1[m - 1] > nums1[m]) {
     temp = nums1[m];
