@@ -17,11 +17,9 @@ var removeElement = function (nums, val) {
   for (i = k - 1; i >= 0; i -= 1) {
     if (nums[i] === val) {
       k -= 1;
-      if (i <= k) {
-        temp = nums[k];
-        nums[k] = nums[i];
-        nums[i] = temp;
-      }
+      temp = nums[k];
+      nums[k] = nums[i];
+      nums[i] = temp;
     }
   }
   nums.length = k;
