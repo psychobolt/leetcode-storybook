@@ -5,7 +5,8 @@ import solution from './removeElement.es3.cjs';
 import code from './removeElement.es3.cjs?raw';
 import runTestCase, { cases } from './testCases.js';
 
-export const c0 = cases[2];
+export const c0 = cases[0];
+export const testCase = cloneDeep(c0);
 
 <Meta title="Data Structure/Array/1D/Easy/[27] Remove Element/Solution/Javascript" />
 
@@ -24,7 +25,8 @@ Modify the solution file `./removeElement.es3.cjs` to test results.
     <br />
     <div>
       <div>Output: </div>
-      <div>{JSON.stringify(runTestCase(solution, cloneDeep(c0)))}</div>
+      <div>{JSON.stringify(runTestCase(solution, testCase))}</div>
+      <div>{JSON.stringify(testCase.input.nums)}</div>
     </div>
   </Story>
 </Canvas>
