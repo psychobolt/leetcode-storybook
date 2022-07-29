@@ -1,10 +1,13 @@
+import cloneDeep from 'lodash/fp/cloneDeep.js';
 import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
 import solution from './findDiagonalOrder.es3.cjs';
 import code from './findDiagonalOrder.es3.cjs?raw';
 import runTestCase, { cases } from './testCases.js';
 import example from '../example.png';
 
 export const c0 = cases[0];
+export const testCase = cloneDeep(c0);
 
 <Meta title="Data Structure/Array/2D/Medium/[498] Diagonal Traverse/Solution/Javascript" />
 
@@ -22,7 +25,7 @@ Modify the solution file `./findDiagonalOrder.es3.cjs` to test results.
     </div>
     <div>
       <div>Output: </div>
-      <div>{JSON.stringify(runTestCase(solution, c0))}</div>
+      <div>{JSON.stringify(runTestCase(solution, testCase))}</div>
     </div>
   </Story>
 </Canvas>
