@@ -11,14 +11,16 @@
  */
 var removeDuplicates = function (nums) {
   var i;
-  var k = 0;
+  var k = 1;
   if (nums.length === 1) return k;
-  for (i = 0; i < nums.length - 1; i += 1) {
-    if (nums[i] === nums[i + 1]) {
+  for (i = 1; i < nums.length; i += 1) {
+    if (nums[i - 1] !== nums[i]) {
+      nums[k] = nums[i];
       k += 1;
     }
   }
-  return nums.length - k;
+  nums.length = k;
+  return k;
 };
 // @lc code=end
 
