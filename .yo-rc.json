@@ -109,6 +109,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$1299": {
+        "path": "DataStructure/Array/1D/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
