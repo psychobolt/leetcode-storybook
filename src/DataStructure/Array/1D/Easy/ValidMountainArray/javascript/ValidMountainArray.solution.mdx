@@ -1,0 +1,31 @@
+import cloneDeep from 'lodash/fp/cloneDeep.js';
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+import solution from './validMountainArray.es3.cjs';
+import code from './validMountainArray.es3.cjs?raw';
+import runTestCase, { cases } from './testCases.js';
+
+export const c0 = cases[0];
+export const testCase = cloneDeep(c0);
+
+<Meta title="Data Structure/Array/1D/Easy/[941] Valid Mountain Array/Solution/Javascript" />
+
+# Solution
+
+Modify the solution file `./validMountainArray.es3.cjs` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <div>Input: </div>
+      <div>{JSON.stringify(c0.input)}</div>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <div>{JSON.stringify(runTestCase(solution, testCase))}</div>
+    </div>
+  </Story>
+</Canvas>
