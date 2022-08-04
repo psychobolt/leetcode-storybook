@@ -44,13 +44,6 @@ var spiralOrder = function (matrix) {
   }
   return result;
 };
-// j - x0 x1
-//
-//  i
-//  |
-// y0
-// y1
-//
 // @lc code=end
 
 module.exports = spiralOrder;
