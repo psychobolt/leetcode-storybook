@@ -1,0 +1,26 @@
+[
+  {
+    "input": ["flower","flow","flight"],
+    "expected": "fl"
+  },
+  {
+    "input": ["dog","racecar","car"],
+    "expected": ""
+  },
+  {
+    "input": ["a"],
+    "expected": "a"
+  },
+  {
+    "input": ["flower","flower","flower","flower"],
+    "expected": "flower"
+  },
+  {
+    "input": ["flower","flo"],
+    "expected": "flo"
+  },
+  {
+    "input": ["flower","flow","flight"],
+    "expected": "fl"
+  }
+]
