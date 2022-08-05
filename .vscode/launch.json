@@ -14,6 +14,7 @@
       "cwd": "${workspaceRoot}",
       "runtimeArgs": [
         "test:js",
+        "strStr.test.js"
       ],
       "console": "integratedTerminal",
       "sourceMaps": true,

@@ -1,0 +1,72 @@
+[
+  {
+    "input": {
+      "haystack": "hello",
+      "needle": "ll"
+    },
+    "expected": 2
+  },
+  {
+    "input": {
+      "haystack": "aaaaa",
+      "needle": "bba"
+    },
+    "expected": -1
+  },
+  {
+    "input": {
+      "haystack": "a",
+      "needle": "a"
+    },
+    "expected": 0
+  },
+  {
+    "input": {
+      "haystack": "a",
+      "needle": "b"
+    },
+    "expected": -1
+  },
+  {
+    "input": {
+      "haystack": "mississippi",
+      "needle": "issip"
+    },
+    "expected": 4
+  },
+  {
+    "input": {
+      "haystack": "mississippi",
+      "needle": "issipi"
+    },
+    "expected": -1
+  },
+  {
+    "input": {
+      "haystack": "mississippi",
+      "needle": "sippj"
+    },
+    "expected": -1
+  },
+  {
+    "input": {
+      "haystack": "mississippi",
+      "needle": "pi"
+    },
+    "expected": 9
+  },
+  {
+    "input": {
+      "haystack": "babba",
+      "needle": "bbb"
+    },
+    "expected": -1
+  },
+  {
+    "input": {
+      "haystack": "aabaaabaaac",
+      "needle" : "aabaaac"
+    },
+    "expected": 4
+  }
+]
