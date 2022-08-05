@@ -133,6 +133,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$67": {
+        "path": "DataStructure/String/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
