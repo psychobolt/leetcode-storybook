@@ -151,6 +151,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$344": {
+        "path": "DataStructure/String/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
