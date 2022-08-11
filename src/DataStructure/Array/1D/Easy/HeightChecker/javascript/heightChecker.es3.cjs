@@ -11,28 +11,25 @@
  */
 var heightChecker = function (heights) {
   var count = 0;
-  var sorted = [];
   var i;
-  var left = 0;
-  var right = heights.length - 1;
-  var temp;
+  var positions = [0];
+  var sorted = [];
   for (i = 0; i < heights.length; i += 1) {
-    sorted.push(heights[i]);
+    positions[heights[i]] = (positions[heights[i]] || 0) + 1;
   }
-  for (i = 0; i < sorted.length; i += 1) {
-    if (sorted[left] >= sorted[right]) {
-      temp = sorted[right];
-      sorted[right] = sorted[left];
-      sorted[left] = temp;
-      right -= 1;
-    } else {
-      left += 1;
+  positions.pop();
+  for (i = 1; i < positions.length; i += 1) {
+    if (!positions[i]) {
+      positions[i] = 0;
     }
+    positions[i] += positions[i - 1];
   }
   for (i = 0; i < heights.length; i += 1) {
-    if (heights[i] !== sorted[i]) {
+    sorted[positions[heights[i] - 1]] = heights[i];
+    if (heights[positions[heights[i] - 1]] !== heights[i]) {
       count += 1;
     }
+    positions[heights[i] - 1] += 1;
   }
   return count;
 };
