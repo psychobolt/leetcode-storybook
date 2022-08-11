@@ -12,7 +12,6 @@ var arrayPairSum = function (nums) {
   var maxSum = 0;
   var i;
   var positions = [0];
-  var sorted = [];
   var min = 0;
   for (i = 0; i < nums.length; i += 1) {
     if (nums[i] < min) {
@@ -27,11 +26,10 @@ var arrayPairSum = function (nums) {
     positions[i] = (positions[i] || 0) + positions[i - 1];
   }
   for (i = 0; i < nums.length; i += 1) {
-    sorted[positions[nums[i] - min]] = nums[i];
+    if (positions[nums[i] - min] % 2 === 0) {
+      maxSum += nums[i];
+    }
     positions[nums[i] - min] += 1;
-  }
-  for (i = 0; i < sorted.length; i += 2) {
-    maxSum += Math.min(sorted[i], sorted[i + 1]);
   }
   return maxSum;
 };
