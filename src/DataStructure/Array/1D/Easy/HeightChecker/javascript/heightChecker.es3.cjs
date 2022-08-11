@@ -13,7 +13,6 @@ var heightChecker = function (heights) {
   var count = 0;
   var i;
   var positions = [0];
-  var sorted = [];
   for (i = 0; i < heights.length; i += 1) {
     positions[heights[i]] = (positions[heights[i]] || 0) + 1;
   }
@@ -25,7 +24,6 @@ var heightChecker = function (heights) {
     positions[i] += positions[i - 1];
   }
   for (i = 0; i < heights.length; i += 1) {
-    sorted[positions[heights[i] - 1]] = heights[i];
     if (heights[positions[heights[i] - 1]] !== heights[i]) {
       count += 1;
     }
