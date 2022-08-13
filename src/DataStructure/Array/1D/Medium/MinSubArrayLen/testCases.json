@@ -46,7 +46,6 @@
       "target": 11,
       "nums": [1,2,3,4,5]
     },
-    "expected": 0,
-    "realExpected": 3
+    "expected": 3
   }
 ]

@@ -20,7 +20,7 @@ var minSubArrayLen = function (target, nums) {
     if (acc < target) {
       end += 1;
     } else {
-      if (acc === target) {
+      if (acc >= target) {
         length = length > 0 ? Math.min(end - start + 1, length) : end - start + 1;
       }
       i = start;
