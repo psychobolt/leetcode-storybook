@@ -17,17 +17,27 @@ var MyLinkedList = function MyLinkedList() {
 
 /**
  * @param {number} index
- * @return {number}
+ * @return {Node}
  */
-MyLinkedList.prototype.get = function get(index) {
+MyLinkedList.prototype.getNode = function getNode(index) {
   var i;
   var ptr;
   for (i = 0, ptr = this.head; ptr != null; ptr = ptr.next) {
     if (index === i) {
-      return ptr.val;
+      return ptr;
     }
     i += 1;
   }
+  return null;
+};
+
+/**
+ * @param {number} index
+ * @return {number}
+ */
+MyLinkedList.prototype.get = function get(index) {
+  var node = this.getNode(index);
+  if (node) return node.val;
   return -1;
 };
 

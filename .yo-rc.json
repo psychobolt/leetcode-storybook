@@ -199,6 +199,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$141": {
+        "path": "DataStructure/LinkedList/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
