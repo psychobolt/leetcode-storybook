@@ -1,0 +1,14 @@
+[
+  {
+    "input": "Let's take LeetCode contest",
+    "expected": "s'teL ekat edoCteeL tsetnoc"
+  },
+  {
+    "input": "God Ding",
+    "expected": "doG gniD"
+  },
+  {
+    "input": "Ha Ha",
+    "expected": "aH aH"
+  }
+]
