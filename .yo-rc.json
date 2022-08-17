@@ -187,6 +187,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$151": {
+        "path": "DataStructure/String/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }

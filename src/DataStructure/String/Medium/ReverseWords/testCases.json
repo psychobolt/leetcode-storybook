@@ -1,0 +1,22 @@
+[
+  {
+    "input": "the sky is blue",
+    "expected": "blue is sky the"
+  },
+  {
+    "input": "  hello world  ",
+    "expected": "world hello"
+  },
+  {
+    "input": "a good   example",
+    "expected": "example good a"
+  },
+  {
+    "input": "baby  ",
+    "expected": "baby"
+  },
+  {
+    "input": " a g",
+    "expected": "g a"
+  }
+]
