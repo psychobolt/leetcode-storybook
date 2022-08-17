@@ -16,7 +16,7 @@ Modify the solution file `./dominantIndex.py` to test results.
 ## Default Case
 
 <Canvas withSource="open">
-  <Story name="Case 0" parameters={{ docs: { source: { code } } }} inline={false} height="130px">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }} inline={false} height="200px">
     <py-env>
     {`
       - paths:
@@ -27,16 +27,19 @@ Modify the solution file `./dominantIndex.py` to test results.
     </py-env>
     <div>
       <div>Input: </div>
-      <py-script>
-      {`
-        from testCases import cases
-        print(${c0}['input'])
-      `}
-      </py-script>
+      <pre>
+        <py-script>
+        {`
+          from testCases import cases
+          print(${c0}['input'])
+        `}
+        </py-script>
+      </pre>
     </div>
     <br />
     <div>
       <div>Output: </div>
+      <pre>
       <py-script>
       {`
         from testCases import cases, runTestCase
@@ -45,6 +48,7 @@ Modify the solution file `./dominantIndex.py` to test results.
         print(runTestCase(solution.dominantIndex, ${c0}))
       `}
       </py-script>
+      </pre>
     </div>
   </Story>
 </Canvas>
