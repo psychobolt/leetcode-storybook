@@ -176,6 +176,12 @@
           "javascript"
         ]
       },
+      "$167": {
+        "path": "DataStructure/Array/1D/Medium",
+        "languages": [
+          "javascript"
+        ]
+      },
       "$209": {
         "path": "DataStructure/Array/1D/Medium",
         "languages": [
@@ -202,6 +208,12 @@
       },
       "$141": {
         "path": "DataStructure/LinkedList/Easy",
+        "languages": [
+          "javascript"
+        ]
+      },
+      "$142": {
+        "path": "DataStructure/LinkedList/Medium",
         "languages": [
           "javascript"
         ]
