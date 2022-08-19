@@ -1,0 +1,35 @@
+import cloneDeep from 'lodash/fp/cloneDeep.js';
+import memoize from 'lodash/fp/memoize.js';
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+import solution from './getIntersectionNode.es3.cjs';
+import code from './getIntersectionNode.es3.cjs?raw';
+import runTestCase, { cases } from './testCases.js';
+
+export const c0 = cases[0];
+export const printOutput = memoize(() => {
+  const result = runTestCase(solution, cloneDeep(c0));
+  return result ? result.val : 0;
+});
+
+<Meta title="Data Structure/Linked List/Easy/[160] Intersection of Two Linked Lists/Solution/Javascript" />
+
+# Solution
+
+Modify the solution file `./getIntersectionNode.es3.cjs` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <div>Input: </div>
+      <pre>{JSON.stringify(c0.input)}</pre>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <pre>{printOutput()}</pre>
+    </div>
+  </Story>
+</Canvas>
