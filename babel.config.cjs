@@ -81,6 +81,7 @@ module.exports = {
               }
               : {}
           ),
+          'linked-list': path.resolve('src', 'DataStructure', 'LinkedList', 'Medium', 'MyLinkedList', 'javascript', 'MyLinkedList.es3.cjs'),
         },
       },
     ],

@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "linked-list": ["./src/DataStructure/LinkedList/Medium/MyLinkedList/javascript/MyLinkedList.es3.cjs"]
+    }
+  }
+}

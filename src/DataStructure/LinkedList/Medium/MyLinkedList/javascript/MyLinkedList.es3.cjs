@@ -127,4 +127,13 @@ MyLinkedList.prototype.deleteAtIndex = function deleteAtIndex(index) {
  * obj.deleteAtIndex(index)
  */
 
+MyLinkedList.prototype.toArray = function toArray() {
+  var result = [];
+  var ptr;
+  for (ptr = this.head; ptr !== null; ptr = ptr.next) {
+    result.push(ptr.val);
+  }
+  return result;
+};
+
 module.exports = MyLinkedList;
