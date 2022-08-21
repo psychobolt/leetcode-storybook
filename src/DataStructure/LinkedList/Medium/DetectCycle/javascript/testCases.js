@@ -1,10 +1,11 @@
+import LinkedList from 'linked-list';
+
 import json from '../testCases.json';
-import MyLinkedList from '../../MyLinkedList/javascript/MyLinkedList.es3.cjs';
 
 export const cases = json;
 
 export default (runSolution, { input: { head, pos } }) => {
-  const list = new MyLinkedList();
+  const list = new LinkedList();
   head.forEach((val, i) => {
     list.addAtTail(val);
     list.getNode(i).index = i;

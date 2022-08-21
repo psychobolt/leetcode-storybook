@@ -22,6 +22,14 @@ module.exports = {
   webpackFinal: config => ({
     ...config,
     ...webpackConfig,
+    resolve: {
+      ...config.resolve,
+      ...webpackConfig.resolve,
+      alias: {
+        ...config.resolve?.alias,
+        ...webpackConfig.resolve?.alias,
+      },
+    },
     module: {
       ...config.module,
       ...webpackConfig.module,

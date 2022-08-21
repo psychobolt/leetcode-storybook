@@ -1,5 +1,6 @@
+import LinkedList from 'linked-list';
+
 import json from '../testCases.json';
-import LinkedList from '../../MyLinkedList/javascript/MyLinkedList.es3.cjs';
 
 export const cases = json;
 
