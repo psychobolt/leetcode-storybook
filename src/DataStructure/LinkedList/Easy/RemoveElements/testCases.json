@@ -1,0 +1,30 @@
+[
+  {
+    "input": {
+      "head": [1,2,6,3,4,5,6],
+      "val": 6
+    },
+    "expected": [1,2,3,4,5]
+  },
+  {
+    "input": {
+      "head": [],
+      "val": 1
+    },
+    "expected": []
+  },
+  {
+    "input": {
+      "head": [7,7,7,7],
+      "val": 7
+    },
+    "expected": []
+  },
+  {
+    "input": {
+      "head": [1,2,2,1],
+      "val": 2
+    },
+    "expected": [1,1]
+  }
+]
