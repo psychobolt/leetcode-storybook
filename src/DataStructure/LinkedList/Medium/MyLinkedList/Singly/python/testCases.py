@@ -4,7 +4,7 @@ try:
     data = open('testCases.json')
 except FileNotFoundError:
     from pathlib import Path
-    data = (Path(__file__).parent / '../testCases.json').open()
+    data = (Path(__file__).parent / '../../testCases.json').open()
 
 cases = json.load(data)
 

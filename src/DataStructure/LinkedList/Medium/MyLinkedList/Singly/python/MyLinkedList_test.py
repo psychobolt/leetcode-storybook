@@ -1,6 +1,6 @@
 import pytest
-from MyLinkedList.python.MyLinkedList import MyLinkedList
-from MyLinkedList.python.testCases import runTestCase, cases
+from MyLinkedList.Singly.python.MyLinkedList import MyLinkedList
+from MyLinkedList.Singly.python.testCases import runTestCase, cases
 
 
 @pytest.mark.parametrize('case', cases)
