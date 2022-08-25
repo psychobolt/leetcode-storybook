@@ -247,6 +247,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$234": {
+        "path": "DataStructure/LinkedList/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
