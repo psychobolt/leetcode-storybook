@@ -64,7 +64,6 @@ MyLinkedList.prototype.addAtHead = function addAtHead(val) {
  */
 MyLinkedList.prototype.addAtTail = function addAtTail(val) {
   var node;
-  if (val === 83) debugger;
   if (this.head === null) {
     this.addAtHead(val);
   } else {
