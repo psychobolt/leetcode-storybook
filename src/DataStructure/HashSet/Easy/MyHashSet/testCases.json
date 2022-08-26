@@ -1,0 +1,22 @@
+[
+  {
+    "input": ["MyHashSet", "add", "add", "contains", "contains", "add", "contains", "remove", "contains"],
+    "args": [[], [1], [2], [1], [3], [2], [2], [2], [2]],
+    "expected": [null, null, null, true, false, null, true, null, false]
+  },
+  {
+    "input": ["MyHashSet", "contains", "add", "add", "add", "add", "add", "contains", "remove", "contains", "contains", "contains"],
+    "args": [[], [1], [1], [1], [1001], [10001], [1], [10001], [1001], [1001], [1], [10001]],
+    "expected": [null, false, null, null, null, null, null, true, null, false, true, true]
+  },
+  {
+    "input":  ["MyHashSet","add","contains","remove","contains"],
+    "args": [[],[0],[1000000],[1000000],[0]],
+    "expected": [null, null, false, null, true]
+  },
+  {
+    "input":  ["MyHashSet","add","add","remove","contains"],
+    "args": [[],[0],[1000000],[0],[1000000]],
+    "expected": [null, null, null, null, true]
+  }
+]

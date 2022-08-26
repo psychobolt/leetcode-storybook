@@ -265,6 +265,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$705": {
+        "path": "DataStructure/HashSet/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
