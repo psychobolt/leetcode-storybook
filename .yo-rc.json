@@ -283,6 +283,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$136": {
+        "path": "Math/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
