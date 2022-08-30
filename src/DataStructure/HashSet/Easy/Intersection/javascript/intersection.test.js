@@ -1,4 +1,4 @@
-import solution from './intersection.es3.cjs';
+import solution from './intersection.js';
 import runTestCase, { cases } from './testCases.js';
 
 test.each(cases.map(c => [c.name, c]))(

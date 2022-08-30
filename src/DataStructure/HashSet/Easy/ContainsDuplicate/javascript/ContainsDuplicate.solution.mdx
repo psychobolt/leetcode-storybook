@@ -2,8 +2,8 @@ import cloneDeep from 'lodash/fp/cloneDeep.js';
 import memoize from 'lodash/fp/memoize.js';
 import { Meta, Story, Canvas } from '@storybook/addon-docs';
 
-import solution from './containsDuplicate.es3.cjs';
-import code from './containsDuplicate.es3.cjs?raw';
+import solution from './containsDuplicate.js';
+import code from './containsDuplicate.js?raw';
 import runTestCase, { cases } from './testCases.js';
 
 export const c0 = cases[0];
@@ -13,7 +13,7 @@ export const printOutput = memoize(() => JSON.stringify(runTestCase(solution, cl
 
 # Solution
 
-Modify the solution file `./containsDuplicate.es3.cjs` to test results.
+Modify the solution file `./containsDuplicate.js` to test results.
 
 ## Default Case
 
