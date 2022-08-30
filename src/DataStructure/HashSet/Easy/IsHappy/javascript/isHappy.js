@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+
 /*
  * @lc app=leetcode id=202 lang=javascript
  *
