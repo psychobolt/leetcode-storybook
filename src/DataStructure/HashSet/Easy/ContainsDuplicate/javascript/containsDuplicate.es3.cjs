@@ -11,10 +11,10 @@
  */
 var containsDuplicate = function (nums) {
   var i;
-  var set = {};
+  var map = {};
   for (i = 0; i < nums.length; i += 1) {
-    if (set[nums[i]]) return true;
-    set[nums[i]] = true;
+    if (map[nums[i]]) return true;
+    map[nums[i]] = true;
   }
   return false;
 };
