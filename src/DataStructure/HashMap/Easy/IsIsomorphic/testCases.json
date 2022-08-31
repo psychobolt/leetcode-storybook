@@ -1,0 +1,30 @@
+[
+  {
+    "input": {
+      "s": "egg",
+      "t": "add"
+    },
+    "expected": true
+  },
+  {
+    "input": {
+      "s": "foo",
+      "t": "bar"
+    },
+    "expected": false
+  },
+  {
+    "input": {
+      "s": "paper",
+      "t": "title"
+    },
+    "expected": true
+  },
+  {
+    "input": {
+      "s": "badc",
+      "t": "baba"
+    },
+    "expected": false
+  }
+]
