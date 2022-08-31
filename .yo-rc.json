@@ -301,6 +301,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$1": {
+        "path": "DataStructure/HashMap/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
