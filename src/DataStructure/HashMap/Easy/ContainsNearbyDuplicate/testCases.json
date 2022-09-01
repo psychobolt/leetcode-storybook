@@ -1,0 +1,30 @@
+[
+  {
+    "input": {
+      "nums": [1,2,3,1],
+      "k": 3
+    },
+    "expected": true
+  },
+  {
+    "input": {
+      "nums": [1,0,1,1],
+      "k": 1
+    },
+    "expected": true
+  },
+  {
+    "input": {
+      "nums": [1,2,3,1,2,3],
+      "k": 2
+    },
+    "expected": false
+  },
+  {
+    "input": {
+      "nums": [0,0],
+      "k": 2
+    },
+    "expected": true
+  }
+]

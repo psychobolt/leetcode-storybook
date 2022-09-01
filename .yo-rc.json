@@ -331,6 +331,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$219": {
+        "path": "DataStructure/HashMap/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
