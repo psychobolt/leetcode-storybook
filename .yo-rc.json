@@ -313,6 +313,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$599": {
+        "path": "DataStructure/HashMap/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }

@@ -1,0 +1,37 @@
+[
+  {
+    "input": {
+      "list1": ["Shogun","Tapioca Express","Burger King","KFC"],
+      "list2": ["Piatti","The Grill at Torrey Pines","Hungry Hunter Steakhouse","Shogun"]
+    },
+    "expected": ["Shogun"]
+  },
+  {
+    "input": {
+      "list1": ["Shogun","Tapioca Express","Burger King","KFC"],
+      "list2": ["KFC","Shogun","Burger King"]
+    },
+    "expected": ["Shogun"]
+  },
+  {
+    "input": {
+      "list1": ["happy","sad","good"],
+      "list2": ["sad","happy","good"]
+    },
+    "expected": ["sad", "happy"]
+  },
+  {
+    "input": {
+      "list1": ["sad"],
+      "list2": ["happy"]
+    },
+    "expected": []
+  },
+  {
+    "input": {
+      "list1": ["Shogun","Piatti","Tapioca Express","Burger King","KFC"],
+      "list2": ["Piatti","The Grill at Torrey Pines","Hungry Hunter Steakhouse","Shogun"]
+    },
+    "expected": ["Piatti"]
+  }
+]
