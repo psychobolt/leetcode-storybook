@@ -1,0 +1,18 @@
+[
+  {
+    "input": "leetcode",
+    "expected": 0
+  },
+  {
+    "input": "loveleetcode",
+    "expected": 2
+  },
+  {
+    "input": "aabb",
+    "expected": -1
+  },
+  {
+    "input": "a",
+    "expected": 0
+  }
+]
