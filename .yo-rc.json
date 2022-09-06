@@ -349,6 +349,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$771": {
+        "path": "DataStructure/HashSet/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }

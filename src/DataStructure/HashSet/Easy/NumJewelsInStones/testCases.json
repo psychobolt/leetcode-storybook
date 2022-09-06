@@ -1,0 +1,16 @@
+[
+  {
+    "input": {
+      "jewels": "aA",
+      "stones": "aAAbbbb"
+    },
+    "expected": 3
+  },
+  {
+    "input": {
+      "jewels": "z",
+      "stones": "ZZ"
+    },
+    "expected": 0
+  }
+]
