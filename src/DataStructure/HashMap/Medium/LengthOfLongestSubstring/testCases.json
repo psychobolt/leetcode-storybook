@@ -1,0 +1,26 @@
+[
+  {
+    "input": "abcabcbb",
+    "expected": 3
+  },
+  {
+    "input": "bbbbb",
+    "expected": 1
+  },
+  {
+    "input": "pwwkew",
+    "expected": 3
+  },
+  {
+    "input": "abbbac",
+    "expected": 3
+  },
+  {
+    "input": "baccbac",
+    "expected": 3
+  },
+  {
+    "input": "a",
+    "expected": 1
+  }
+]
