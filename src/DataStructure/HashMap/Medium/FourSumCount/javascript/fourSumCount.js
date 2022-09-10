@@ -30,10 +30,9 @@ const fourSumCount = function (nums1, nums2, nums3, nums4) {
 
   for (const [sumA, countA] of sumCountA) { // eslint-disable-line no-restricted-syntax
     const countB = sumCountB.get(-sumA);
-    if (countB !== undefined) {
-      total += Math.min(countA, countB);
-    }
+    if (countB !== undefined) total += countA * countB;
   }
+
   return total;
 };
 // @lc code=end
