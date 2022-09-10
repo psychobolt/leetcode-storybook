@@ -367,6 +367,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$347": {
+        "path": "DataStructure/HashMap/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }

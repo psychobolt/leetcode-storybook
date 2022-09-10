@@ -1,0 +1,32 @@
+import cloneDeep from 'lodash/fp/cloneDeep.js';
+import memoize from 'lodash/fp/memoize.js';
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+import solution from './topKFrequent.js';
+import code from './topKFrequent.js?raw';
+import runTestCase, { cases } from './testCases.js';
+
+export const c0 = cases[0];
+export const printOutput = memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0))));
+
+<Meta title="Data Structure/Hash Map/Medium/[347] Top K Frequent Elements/Solution/Javascript" />
+
+# Solution
+
+Modify the solution file `./topKFrequent.js` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <div>Input: </div>
+      <pre>{JSON.stringify(c0.input)}</pre>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <pre>{printOutput()}</pre>
+    </div>
+  </Story>
+</Canvas>
