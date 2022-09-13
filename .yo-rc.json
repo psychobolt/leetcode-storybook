@@ -391,6 +391,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$118": {
+        "path": "DataStructure/Array/2D/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
