@@ -403,6 +403,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$2": {
+        "path": "DataStructure/LinkedList/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }

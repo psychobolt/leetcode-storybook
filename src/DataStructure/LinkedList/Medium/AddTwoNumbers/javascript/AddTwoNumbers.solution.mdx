@@ -1,0 +1,35 @@
+import cloneDeep from 'lodash/fp/cloneDeep.js';
+import memoize from 'lodash/fp/memoize.js';
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import LinkedList from 'linked-list';
+
+import solution from './addTwoNumbers.es3.cjs';
+import code from './addTwoNumbers.es3.cjs?raw';
+import runTestCase, { cases } from './testCases.js';
+
+export const c0 = cases[3];
+export const printOutput = memoize(() => JSON.stringify(
+  LinkedList.prototype.toArray.call({ head: runTestCase(solution, cloneDeep(c0)) }),
+));
+
+<Meta title="Data Structure/Linked List/Medium/[2] Add Two Numbers/Solution/Javascript" />
+
+# Solution
+
+Modify the solution file `./addTwoNumbers.es3.cjs` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <div>Input: </div>
+      <pre>{JSON.stringify(c0.input)}</pre>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <pre>{printOutput()}</pre>
+    </div>
+  </Story>
+</Canvas>
