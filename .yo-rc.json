@@ -415,6 +415,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$24": {
+        "path": "DataStructure/LinkedList/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
