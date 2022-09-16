@@ -1,6 +1,6 @@
 import LinkedList from 'linked-list';
 
-import json from '../testCases.json';
+import json from '../../testCases.json';
 
 export const cases = json;
 
