@@ -8485,10 +8485,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.24.1":
-  version: 3.24.1
-  resolution: "core-js@npm:3.24.1"
-  checksum: 6fb5bf0fd9e9f3e69d95616dd03332fea6758a715d2628c108b5faf17b48b0f580e90c4febb0a523c4665b0991a810de16289f86187fe79d70cc722dbd3edf0e
+"core-js@npm:3.25.1":
+  version: 3.25.1
+  resolution: "core-js@npm:3.25.1"
+  checksum: bfacb078e790913841e2d5008b9b6705ae56ed23f83c7f0ae08d330d874561012611089d53b71520105234ed0abba36f28d91b391514a16541a8c8d98c464239
   languageName: node
   linkType: hard
 
@@ -14721,7 +14721,7 @@ __metadata:
     babel-plugin-named-exports-order: 0.0.2
     babel-plugin-polyfill-corejs3: 0.6.0
     concurrently: 7.4.0
-    core-js: 3.24.1
+    core-js: 3.25.1
     cross-env: 7.0.3
     cross-spawn: 7.0.3
     eslint: 8.13.0
