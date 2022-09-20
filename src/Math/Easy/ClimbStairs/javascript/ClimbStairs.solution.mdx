@@ -1,0 +1,68 @@
+import cloneDeep from 'lodash/fp/cloneDeep.js';
+import memoize from 'lodash/fp/memoize.js';
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+import solution from './climbStairs.js';
+import code from './climbStairs.js?raw';
+import runTestCase, { cases } from './testCases.js';
+
+export const c0 = cases[0];
+export const c2 = cases[2];
+export const printOutput0 = memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0))));
+export const printOutput2 = memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c2))));
+
+<Meta title="Math/Easy/[70] Climbing Stairs/Solution/Javascript" />
+
+# Solution
+
+Modify the solution file `./climbStairs.es3.cjs` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <div>Input: </div>
+      <pre>{JSON.stringify(c0.input)}</pre>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <pre>{printOutput0()}</pre>
+    </div>
+  </Story>
+</Canvas>
+
+## Case 2
+
+<Canvas>
+  <Story name="Case 2" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <div>Input: </div>
+      <pre>{JSON.stringify(c2.input)}</pre>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <pre>{printOutput2()}</pre>
+    </div>
+  </Story>
+</Canvas>
+
+### Explanation
+
+Possible steps:
+1. 1 step + 1 step + 1 step + 1 step
+2. 1 step + 1 step + 2 steps
+4. 1 step + 2 steps + 1 step
+3. 2 steps + 1 step + 1 step
+5. 2 steps + 2 step
+
+n = 1, n = 2, n = 3 are subsets of n = 4. For example (steps for 3 in parenthesis)
+1. 1 step + (1 step + 1 step + 1 step) = f(1) + f(3) = f(1) + (f(1) + f(1) + f(1))
+2. 1 step + (1 step + 2 steps) = f(1) + f(3) = f(1) + (f(1) + f(2))
+3. 1 step + (2 steps + 1 step) = f(1) + f(3) = f(1) + (f(2) + f(1))
+4. 2 steps + 1 step + 1 step = f(2) + f(1) + f(1)
+5. 2 steps + 2 steps = f(2) + f(2)
+
+The pattern can start with f(n - 1) or f(n - 2) first. We should count both approaches. Whenever there is an existing approach solved, we get the saved count.
