@@ -421,6 +421,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$509": {
+        "path": "Math/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
