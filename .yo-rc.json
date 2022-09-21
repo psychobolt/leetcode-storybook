@@ -433,6 +433,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$50": {
+        "path": "Math/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }

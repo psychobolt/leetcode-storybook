@@ -1,0 +1,33 @@
+import { Meta } from '@storybook/addon-docs';
+import { components as rawComponents } from '@storybook/components';
+import { styled } from '@storybook/theming';
+import Markdown from 'markdown-to-jsx';
+
+import Problem from './MyPow.md?raw';
+
+export const withReset = ({ theme }) => ({
+  fontFamily: theme.typography.fonts.base,
+  fontSize: theme.typography.size.s3,
+  margin: 0,
+  WebkitFontSmoothing: 'antialiased',
+  MozOsxFontSmoothing: 'grayscale',
+  WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
+  WebkitOverflowScrolling: 'touch',
+});
+
+export const ResetWrapper = styled.div(withReset);
+
+<Meta title="Math/Medium/[50] Pow(x, n)/Problem" parameters={{ badges: ['math', 'binary-search', 'bloomberg', 'facebook', 'google', 'linkedin'] }} />
+
+<ResetWrapper>
+  <Markdown options={{
+    forceBlock: true,
+    overrides: {
+      ...rawComponents,
+      code: undefined,
+    },
+  }}
+  >
+    {Problem}
+  </Markdown>
+</ResetWrapper>
