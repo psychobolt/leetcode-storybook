@@ -445,6 +445,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$622": {
+        "path": "DataStructure/Queue",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
