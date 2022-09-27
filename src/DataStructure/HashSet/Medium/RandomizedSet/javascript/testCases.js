@@ -7,6 +7,7 @@ export default (RandomizedSet, { input, args }) => {
   return input.map((command, i) => {
     const func = RandomizedSet.prototype[command];
     if (command === 'getRandom') {
+      if (set.data.length === 1) return func.apply(set, args[i]);
       func.apply(set, args[i]);
       return 'any';
     }
