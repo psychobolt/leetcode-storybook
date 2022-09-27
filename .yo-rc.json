@@ -439,6 +439,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$380": {
+        "path": "DataStructure/HashSet/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }

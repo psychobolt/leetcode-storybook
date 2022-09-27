@@ -1,0 +1,12 @@
+[
+  {
+    "input": ["RandomizedSet", "insert", "remove", "insert", "getRandom", "remove", "insert", "getRandom"],
+    "args": [[], [1], [2], [2], [], [1], [2], []],
+    "expected": [null, true, false, true, "any", true, false, 2]
+  },
+  {
+    "input": ["RandomizedSet","remove","remove","insert","getRandom","remove","insert"],
+    "args": [[],[0],[0],[0],[],[0],[0]],
+    "expected": [null,false,false,true,0,true,true]
+  }
+]
