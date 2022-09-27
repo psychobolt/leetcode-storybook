@@ -447,7 +447,7 @@
         ]
       },
       "$622": {
-        "path": "DataStructure/Queue",
+        "path": "DataStructure/Queue/Medium",
         "languages": [
           "javascript"
         ]
