@@ -28,11 +28,14 @@ const numIslands = function (grid) {
       if (grid[i][j] === '1' && !visited.has(`${i},${j}`)) {
         enqueue(i, j);
         while (!queue.isEmpty()) {
-          const [x, y] = queue.dequeue();
-          enqueue(x - 1, y);
-          enqueue(x, y + 1);
-          enqueue(x + 1, y);
-          enqueue(x, y - 1);
+          for (let k = 0, size = queue.size(); k < size; k += 1) {
+            const [x, y] = queue.front();
+            enqueue(x - 1, y);
+            enqueue(x, y + 1);
+            enqueue(x + 1, y);
+            enqueue(x, y - 1);
+            queue.dequeue();
+          }
         }
         count += 1;
       }
