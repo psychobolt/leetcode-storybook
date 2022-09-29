@@ -463,6 +463,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$279": {
+        "path": "DataStructure/Queue/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
