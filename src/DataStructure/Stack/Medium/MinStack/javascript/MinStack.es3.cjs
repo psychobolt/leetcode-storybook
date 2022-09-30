@@ -24,6 +24,7 @@ MinStack.prototype.push = function push(val) {
   var top = this.data.length ? this.data[this.data.length - 1] : null;
   node.min = top && top.min.val < val ? top.min : node;
   this.data.push(node);
+  return null;
 };
 
 /**
@@ -31,6 +32,7 @@ MinStack.prototype.push = function push(val) {
  */
 MinStack.prototype.pop = function pop() {
   if (this.data.length) this.data.pop();
+  return null;
 };
 
 /**
