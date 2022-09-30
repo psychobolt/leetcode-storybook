@@ -1,0 +1,12 @@
+[
+  {
+    "input": ["MinStack","push","push","push","getMin","pop","top","getMin"],
+    "args": [[],[-2],[0],[-3],[],[],[],[]],
+    "expected": [null,null,null,null,-3,null,0,-2]
+  },
+  {
+    "input": ["MinStack","push","push","push","pop","pop","pop","pop","getMin","top"],
+    "args": [[],[-2],[0],[-3],[],[],[],[]],
+    "expected": [null,null,null,null,null,null,null,null,null,null]
+  }
+]
