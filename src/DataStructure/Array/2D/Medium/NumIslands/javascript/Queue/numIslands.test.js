@@ -1,7 +1,7 @@
 import solution from './numIslands.js';
-import runTestCase, { cases } from './testCases.js';
+import runTestCase, { cases } from '../testCases.js';
 
 test.each(cases.map(c => [c.name, c]))(
-  '[Data Structure/Queue/Medium/[200] Number of Islands] - Case %#',
+  '[Data Structure/Array/2D/Medium/[200] Number of Islands/Queue] - Case %#',
   (name, testCase) => expect(runTestCase(solution, testCase)).toEqual(testCase.expected),
 );

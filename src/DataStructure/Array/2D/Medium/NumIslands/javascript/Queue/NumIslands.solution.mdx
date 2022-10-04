@@ -4,12 +4,12 @@ import { Meta, Story, Canvas } from '@storybook/addon-docs';
 
 import solution from './numIslands.js';
 import code from './numIslands.js?raw';
-import runTestCase, { cases } from './testCases.js';
+import runTestCase, { cases } from '../testCases.js';
 
 export const c0 = cases[0];
 export const printOutput = memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0))));
 
-<Meta title="Data Structure/Queue/Medium/[200] Number of Islands/Solution/Javascript" />
+<Meta title="Data Structure/Array/2D/Medium/[200] Number of Islands/Solution/Javascript/Queue" />
 
 # Solution
 
