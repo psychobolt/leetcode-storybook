@@ -487,6 +487,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$150": {
+        "path": "DataStructure/Stack/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
