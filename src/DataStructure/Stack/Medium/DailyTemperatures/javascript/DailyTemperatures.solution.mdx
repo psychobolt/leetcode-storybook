@@ -1,0 +1,79 @@
+import cloneDeep from 'lodash/fp/cloneDeep.js';
+import memoize from 'lodash/fp/memoize.js';
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+import solution from './dailyTemperatures.es3.cjs';
+import code from './dailyTemperatures.es3.cjs?raw';
+import runTestCase, { cases } from './testCases.js';
+
+export const c0 = cases[0];
+export const printOutput = memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0))));
+
+<Meta title="Data Structure/Stack/Medium/[739] Daily Temperatures/Solution/Javascript" />
+
+# Solution
+
+Modify the solution file `./dailyTemperatures.es3.cjs` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <div>Input: </div>
+      <pre>{JSON.stringify(c0.input)}</pre>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <pre>{printOutput()}</pre>
+    </div>
+  </Story>
+</Canvas>
+
+### Approach
+
+We can store the __current day__ and __each following day__ when we detect that the current temperature is greater than each following temperature. When the next day is warmer, we only store the current day since the next day is a warmer.
+
+For example, if current day is `i = 0`:
+```js
+// nothing from stack, just store current day
+stack.push(i); // stack = [0]
+```
+
+For example if current day is `i = 1`, the inner while loop is activated once:
+```js
+// stored day is cooler than current day, so we pop the stack
+j = stack.pop(); // 0
+answer[j] = i - j; // answer[0] = 1 - 0;
+
+stack.push(i); // stack = [1]
+```
+
+For example if current day is `i = 2`, the inner while loop is activated once:
+```js
+// stored day is cooler than current day, so we pop the stack
+j = stack.pop();
+answer[j] = i - j; // answer[1] = 2 - 1;
+
+stack.push(i); // stack = [2];
+```
+
+Only logic is to push to stack when `i = 3, 4, 5`:
+```js
+// stack = [2, 3, 4, 5] // The followings day would also be less warmer day of the current (i = 2).
+```
+
+Once we find the warmer day the inner while loop is activated until stack is empty (we pop each day from the stack and calculate the distance). For example, when `i = 6`:
+```js
+j = stack.pop(); // returns 5
+answer[j] = i - j // answer[5] = 6 - 5;
+
+j = stack.pop(); // returns 4
+answer[j] = i - j // answer[4] = 6 - 4;
+
+// so on...
+
+// and finally
+stack.push(6); // stack = [6];
+```
