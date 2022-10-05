@@ -1,0 +1,37 @@
+[
+  {
+    "input": {
+      "nums": [1,1,1,1,1],
+      "target": 3
+    },
+    "expected": 5
+  },
+  {
+    "input": {
+      "nums": [1],
+      "target": 1
+    },
+    "expected": 1
+  },
+  {
+    "input": {
+      "nums": [],
+      "target": -1000
+    },
+    "expected": 0
+  },
+  {
+    "input": {
+      "nums": [0,0,0,0,0,0,0,0,1],
+      "target": 1
+    },
+    "expected": 256
+  },
+  {
+    "input": {
+      "nums": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      "target": 0
+    },
+    "expected": 1048576
+  }
+]
