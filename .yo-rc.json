@@ -499,6 +499,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$297": {
+        "path": "DataStructure/Tree/Hard",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
