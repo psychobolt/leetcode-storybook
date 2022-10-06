@@ -82,6 +82,7 @@ module.exports = {
               : {}
           ),
           'linked-list': path.resolve('src', 'DataStructure', 'LinkedList', 'Medium', 'MyLinkedList', 'Singly', 'javascript', 'MyLinkedList.es3.cjs'),
+          'btree-serialize': path.resolve('src', 'DataStructure', 'Tree', 'Hard', 'Serialize', 'javascript', 'serialize.es3.cjs'),
         },
       },
     ],
