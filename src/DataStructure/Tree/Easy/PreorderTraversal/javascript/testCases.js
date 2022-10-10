@@ -1,4 +1,4 @@
-import serialize, { deserialize } from 'btree-serialize';
+import { deserialize } from 'btree-serialize';
 
 import json from '../testCases.json';
 
