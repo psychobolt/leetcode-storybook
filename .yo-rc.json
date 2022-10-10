@@ -517,6 +517,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$652": {
+        "path": "DataStructure/Tree/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
