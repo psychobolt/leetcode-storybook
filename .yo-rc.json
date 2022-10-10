@@ -523,6 +523,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$144": {
+        "path": "DataStructure/Tree/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
