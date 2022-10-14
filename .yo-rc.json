@@ -553,6 +553,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$112": {
+        "path": "DataStructure/Tree/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
