@@ -4,12 +4,12 @@ import { Meta, Story, Canvas } from '@storybook/addon-docs';
 
 import solution from './maxDepth.es3.cjs';
 import code from './maxDepth.es3.cjs?raw';
-import runTestCase, { cases } from './testCases.js';
+import runTestCase, { cases } from '../testCases.js';
 
 export const c0 = cases[0];
 export const printOutput = memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0))));
 
-<Meta title="Data Structure/Tree/Easy/[104] Maximum Depth of Binary Tree/Solution/Javascript" />
+<Meta title="Data Structure/Tree/Easy/[104] Maximum Depth of Binary Tree/Solution/Javascript/Bottom Up" />
 
 # Solution
 
