@@ -1,0 +1,30 @@
+[
+  {
+    "input": {
+      "preorder": [3,9,20,15,7],
+      "inorder": [9,3,15,20,7]
+    },
+    "expected": [3,9,20,null,null,15,7]
+  },
+  {
+    "input": {
+      "preorder": [-1],
+      "inorder": [-1]
+    },
+    "expected": [-1]
+  },
+  {
+    "input": {
+      "preorder": [1,2],
+      "inorder": [1,2]
+    },
+    "expected": [1,null,2]
+  },
+  {
+    "input": {
+      "preorder": [3,1,2,4],
+      "inorder": [1,2,3,4]
+    },
+    "expected": [3,1,4,null,2]
+  }
+]
