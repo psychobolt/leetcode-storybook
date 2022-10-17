@@ -7856,7 +7856,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:3.25.2, core-js@npm:^3.0.4, core-js@npm:^3.6.5, core-js@npm:^3.8.2":
+"core-js@npm:3.25.5":
+  version: 3.25.5
+  resolution: "core-js@npm:3.25.5"
+  checksum: 208b308c49bc022f90d4349d4c99802a73c9d55053976b3c529f10014c1e37845926defad8c519f2c7f71ea0acf18d2b323ab6aaee34dc85b4c4b3ced0623f3f
+  languageName: node
+  linkType: hard
+
+"core-js@npm:^3.0.4, core-js@npm:^3.6.5, core-js@npm:^3.8.2":
   version: 3.25.2
   resolution: "core-js@npm:3.25.2"
   checksum: e93c6c645d44d98973efb07750975552ad405f080f5a563a99972ff6b2c5c6ee25705f55accd363f5dccd51e9e5f56be25e2be6c14a7294da65763e0e5659c02
@@ -14113,7 +14120,7 @@ __metadata:
     babel-plugin-named-exports-order: 0.0.2
     babel-plugin-polyfill-corejs3: 0.6.0
     concurrently: 7.4.0
-    core-js: 3.25.2
+    core-js: 3.25.5
     cross-env: 7.0.3
     cross-spawn: 7.0.3
     eslint: 8.13.0
