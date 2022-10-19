@@ -1,0 +1,30 @@
+[
+  {
+    "input": {
+      "inorder": [9,3,15,20,7],
+      "postorder": [9,15,7,20,3]
+    },
+    "expected": [3,9,20,null,null,15,7]
+  },
+  {
+    "input": {
+      "inorder": [-1],
+      "postorder": [-1]
+    },
+    "expected": [-1]
+  },
+  {
+    "input": {
+      "inorder": [2,1],
+      "postorder": [2,1]
+    },
+    "expected": [1,2]
+  },
+  {
+    "input": {
+      "inorder": [1,2,3,4],
+      "postorder": [2,1,4,3]
+    },
+    "expected": [3,1,4,null,2]
+  }
+]
