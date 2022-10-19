@@ -5,21 +5,13 @@
  */
 
 // @lc code=start
-var connect2 = function (left, right) {
-  if (left === null || left.right === null) return;
-  left.right.next = right.left;
-  connect2(left.right, right.left);
-};
-
-var connect1 = function (root) {
-  if (root === null) return;
-  root.next = null;
-  if (root.left === null && root.right === null) return;
-  connect1(root.left);
-  connect1(root.right);
-  connect2(root.left, root.right);
-  root.left.next = root.right;
-  root.right.next = null;
+var helper = function (left, right) {
+  if (left === null || right === null) return;
+  left.next = right;
+  right.next = right.next || null;
+  helper(left.left, left.right);
+  helper(right.left, right.right);
+  helper(left.right, right.left);
 };
 
 /**
@@ -37,7 +29,9 @@ var connect1 = function (root) {
  * @return {Node}
  */
 var connect = function (root) {
-  connect1(root);
+  if (root === null) return root;
+  root.next = null;
+  helper(root.left, root.right);
   return root;
 };
 // @lc code=end
