@@ -35,8 +35,8 @@
 <p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2019/02/15/117_sample.png" style="width: 500px; height: 171px;" />
 <pre><code><strong>Input:</strong> root = [1,2,3,4,5,null,7]
-<strong>Output:</strong> [1,#,2,3,#,4,5,7,#]
-<strong>Explanation: </strong>Given the above binary tree (Figure A), your function should populate each next pointer to point to its next right node, just like in Figure B. The serialized output is in level order as connected by the next pointers, with '#' signifying the end of each level.</code></pre>
+<strong>Output:</strong> [1,<span>#</span>,2,3,<span>#</span>,4,5,7,<span>#</span>]
+<pre><strong>Explanation: </strong>Given the above binary tree (Figure A), your function should populate each next pointer to point to its next right node, just like in Figure B. The serialized output is in level order as connected by the next pointers, with '<span>#</span>' signifying the end of each level.</pre></code></pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
