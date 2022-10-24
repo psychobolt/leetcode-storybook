@@ -583,6 +583,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$236": {
+        "path": "DataStructure/Tree/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
