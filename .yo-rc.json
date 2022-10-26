@@ -589,6 +589,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$232": {
+        "path": "DataStructure/Queue/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
