@@ -21,6 +21,7 @@ MyStack.prototype.push = function push(x) {
     x = this.queue.shift();
     this.queue.push(x);
   }
+  return null;
 };
 
 /**
