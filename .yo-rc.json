@@ -595,6 +595,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$225": {
+        "path": "DataStructure/Stack/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
