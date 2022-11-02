@@ -613,6 +613,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$542": {
+        "path": "DataStructure/Queue/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
