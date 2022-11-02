@@ -619,6 +619,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$841": {
+        "path": "DataStructure/Stack/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
