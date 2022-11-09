@@ -1,0 +1,23 @@
+[
+  {
+    "input": {
+      "ransomNote": "a",
+      "magazine": "b"
+    },
+    "expected": false
+  },
+  {
+    "input": {
+      "ransomNote": "aa",
+      "magazine": "ab"
+    },
+    "expected": false
+  },
+  {
+    "input": {
+      "ransomNote": "aa",
+      "magazine": "aab"
+    },
+    "expected": true
+  }
+]
