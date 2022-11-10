@@ -637,6 +637,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$704": {
+        "path": "Algorithms/BinarySearch/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
