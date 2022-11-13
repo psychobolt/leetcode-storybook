@@ -655,6 +655,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$33": {
+        "path": "Algorithms/BinarySearch/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
