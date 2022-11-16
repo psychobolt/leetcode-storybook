@@ -1,0 +1,32 @@
+import cloneDeep from 'lodash/fp/cloneDeep.js';
+import memoize from 'lodash/fp/memoize.js';
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+import solution from './findPeakElement.es3.cjs';
+import code from './findPeakElement.es3.cjs?raw';
+import runTestCase, { cases } from './testCases.js';
+
+export const c0 = cases[0];
+export const printOutput = memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0))));
+
+<Meta title="Algorithms/Binary Search/Medium/[162] Find Peak Element/Solution/Javascript" />
+
+# Solution
+
+Modify the solution file `./findPeakElement.es3.cjs` to test results.
+
+## Default Case
+
+<Canvas withSource="open">
+  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+    <div>
+      <div>Input: </div>
+      <pre>{JSON.stringify(c0.input)}</pre>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <pre>{printOutput()}</pre>
+    </div>
+  </Story>
+</Canvas>
