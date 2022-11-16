@@ -28,18 +28,15 @@ var solution = function (isBadVersion) {
     var left = 0;
     var right = n;
     var mid;
-    var result = n;
     while (left < right) {
       mid = left + Math.trunc((right - left) / 2);
       if (isBadVersion(mid)) {
-        result = mid;
-        right = mid - 1;
+        right = mid;
       } else {
         left = mid + 1;
       }
     }
-    if (isBadVersion(left)) return left;
-    return result;
+    return left; // left === right
   };
 };
 // @lc code=end
