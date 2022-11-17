@@ -639,7 +639,7 @@
         ]
       },
       "$704": {
-        "path": "Algorithms/BinarySearch/Easy",
+        "path": "DataStructure/Array/1D/Easy",
         "languages": [
           "javascript"
         ]
@@ -657,7 +657,7 @@
         ]
       },
       "$33": {
-        "path": "Algorithms/BinarySearch/Medium",
+        "path": "DataStructure/Array/1D/Medium",
         "languages": [
           "javascript"
         ]
@@ -669,7 +669,7 @@
         ]
       },
       "$162": {
-        "path": "Algorithms/BinarySearch/Medium",
+        "path": "DataStructure/Array/1D/Medium",
         "languages": [
           "javascript"
         ]
