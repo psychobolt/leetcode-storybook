@@ -673,6 +673,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$153": {
+        "path": "DataStructure/Array/1D/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
