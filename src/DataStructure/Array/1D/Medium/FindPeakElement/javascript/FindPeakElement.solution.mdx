@@ -2,23 +2,27 @@ import cloneDeep from 'lodash/fp/cloneDeep.js';
 import memoize from 'lodash/fp/memoize.js';
 import { Meta, Story, Canvas } from '@storybook/addon-docs';
 
-import solution from './findPeakElement.es3.cjs';
-import code from './findPeakElement.es3.cjs?raw';
+import solution2 from './findPeakElementTemplate2.es3.cjs';
+import code2 from './findPeakElementTemplate2.es3.cjs?raw';
+import solution3 from './findPeakElementTemplate3.es3.cjs';
+import code3 from './findPeakElementTemplate3.es3.cjs?raw';
 import runTestCase, { cases } from './testCases.js';
 
-export const c0 = cases[0];
-export const printOutput = memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0))));
+export const c0 = cases[7];
+export const printOutput = solution => memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0))))
+export const printOutput2 = printOutput(solution2);
+export const printOutput3 = printOutput(solution3);
 
 <Meta title="Data Structure/Array/1D/Medium/[162] Find Peak Element/Solution/Javascript" />
 
 # Solution
 
-Modify the solution file `./findPeakElement.es3.cjs` to test results.
+## Default Case (Template II)
 
-## Default Case
+Modify the solution file `./findPeakElementTemplate2.es3.cjs` to test results.
 
 <Canvas withSource="open">
-  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+  <Story name="Case 0 (Template II)" parameters={{ docs: { source: { code: code2 } } }}>
     <div>
       <div>Input: </div>
       <pre>{JSON.stringify(c0.input)}</pre>
@@ -26,7 +30,25 @@ Modify the solution file `./findPeakElement.es3.cjs` to test results.
     <br />
     <div>
       <div>Output: </div>
-      <pre>{printOutput()}</pre>
+      <pre>{printOutput2()}</pre>
+    </div>
+  </Story>
+</Canvas>
+
+## Default Case (Template III)
+
+Modify the solution file `./findPeakElementTemplate3.es3.cjs` to test results.
+
+<Canvas>
+  <Story name="Case 0 (Template III)" parameters={{ docs: { source: { code: code3 } } }}>
+    <div>
+      <div>Input: </div>
+      <pre>{JSON.stringify(c0.input)}</pre>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <pre>{printOutput3()}</pre>
     </div>
   </Story>
 </Canvas>
