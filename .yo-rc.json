@@ -645,7 +645,7 @@
         ]
       },
       "$69": {
-        "path": "Algorithms/BinarySearch/Easy",
+        "path": "Math/Easy",
         "languages": [
           "javascript"
         ]
