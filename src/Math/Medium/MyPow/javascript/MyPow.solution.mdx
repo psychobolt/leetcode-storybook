@@ -2,23 +2,29 @@ import cloneDeep from 'lodash/fp/cloneDeep.js';
 import memoize from 'lodash/fp/memoize.js';
 import { Meta, Story, Canvas } from '@storybook/addon-docs';
 
-import solution from './myPow.es3.cjs';
-import code from './myPow.es3.cjs?raw';
+import solution1 from './myPow1.es3.cjs';
+import solution2 from './myPow2.es3.cjs';
+import code1 from './myPow1.es3.cjs?raw';
+import code2 from './myPow2.es3.cjs?raw';
 import runTestCase, { cases } from './testCases.js';
 
 export const c0 = cases[0];
-export const printOutput = memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0)).toFixed(5)));
+export const printOutput = solution => memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0)).toFixed(5)));
+export const printOutput1 = printOutput(solution1);
+export const printOutput2 = printOutput(solution2);
 
 <Meta title="Math/Medium/[50] Pow(x, n)/Solution/Javascript" />
 
 # Solution
 
-Modify the solution file `./myPow.es3.cjs` to test results.
-
 ## Default Case
 
+Modify the solution file `./myPow1.es3.cjs` to test results.
+
+### Binary Search
+
 <Canvas withSource="open">
-  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+  <Story name="Case 0 (Binary Search)" parameters={{ docs: { source: { code: code1 } } }}>
     <div>
       <div>Input: </div>
       <pre>{JSON.stringify(c0.input)}</pre>
@@ -26,7 +32,25 @@ Modify the solution file `./myPow.es3.cjs` to test results.
     <br />
     <div>
       <div>Output (actual is a number): </div>
-      <pre>{printOutput()}</pre>
+      <pre>{printOutput1()}</pre>
+    </div>
+  </Story>
+</Canvas>
+
+### Tail Recursion
+
+Modify the solution file `./myPow2.es3.cjs` to test results.
+
+<Canvas withSource="open">
+  <Story name="Case 0 (Tail Recursion)" parameters={{ docs: { source: { code: code2 } } }}>
+    <div>
+      <div>Input: </div>
+      <pre>{JSON.stringify(c0.input)}</pre>
+    </div>
+    <br />
+    <div>
+      <div>Output (actual is a number): </div>
+      <pre>{printOutput2()}</pre>
     </div>
   </Story>
 </Canvas>
