@@ -691,6 +691,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$367": {
+        "path": "Math/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
