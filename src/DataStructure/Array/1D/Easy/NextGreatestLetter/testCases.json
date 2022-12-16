@@ -1,0 +1,58 @@
+[
+  {
+    "input": {
+      "letters": ["c","f","j"],
+      "target": "a"
+    },
+    "expected": "c"
+  },
+  {
+    "input": {
+      "letters": ["c","f","j"],
+      "target": "c"
+    },
+    "expected": "f"
+  },
+  {
+    "input": {
+      "letters": ["x","x","y","y"],
+      "target": "z"
+    },
+    "expected": "x"
+  },
+  {
+    "input": {
+      "letters": ["a","b","c","d"],
+      "target": "b"
+    },
+    "expected": "c"
+  },
+  {
+    "input": {
+      "letters": ["a","z"],
+      "target": "j"
+    },
+    "expected": "z"
+  },
+  {
+    "input": {
+      "letters": ["a","a", "b"],
+      "target": "b"
+    },
+    "expected": "a"
+  },
+  {
+    "input": {
+      "letters": ["a","a", "a", "a", "a", "b"],
+      "target": "a"
+    },
+    "expected": "b"
+  },
+  {
+    "input": {
+      "letters": ["a","b"],
+      "target": "b"
+    },
+    "expected": "a"
+  }
+]
