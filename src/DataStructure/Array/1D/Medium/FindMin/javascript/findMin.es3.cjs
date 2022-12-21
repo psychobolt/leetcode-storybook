@@ -16,12 +16,10 @@ var findMin = function (nums) {
   if (nums[left] < nums[right]) return nums[left];
   while (left < right) {
     mid = left + Math.trunc((right - left) / 2);
-    if (nums[mid - 1] > nums[mid]) return nums[mid];
-    if (nums[mid] > nums[mid + 1]) return nums[mid + 1];
-    if (nums[left] < nums[mid]) {
+    if (nums[mid] > nums[right]) {
       left = mid + 1;
-    } else {
-      right = mid - 1;
+    } else { // nums[mid] <= nums[right]
+      right = mid;
     }
   }
   return nums[left];
