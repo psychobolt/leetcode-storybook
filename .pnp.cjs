@@ -104,7 +104,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:27.5.1"],\
             ["jest-specific-snapshot", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:5.0.0"],\
             ["lodash", "npm:4.17.21"],\
-            ["markdown-to-jsx", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:7.1.7"],\
+            ["markdown-to-jsx", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:7.1.8"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:18.2.0"],\
             ["react-is", "npm:18.2.0"],\
@@ -20280,7 +20280,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:27.5.1"],\
             ["jest-specific-snapshot", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:5.0.0"],\
             ["lodash", "npm:4.17.21"],\
-            ["markdown-to-jsx", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:7.1.7"],\
+            ["markdown-to-jsx", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:7.1.8"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:18.2.0"],\
             ["react-is", "npm:18.2.0"],\
@@ -20817,17 +20817,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["markdown-to-jsx", [\
-        ["npm:7.1.7", {\
-          "packageLocation": "./.yarn/cache/markdown-to-jsx-npm-7.1.7-2cb4f4a90f-b2c0ea7d09.zip/node_modules/markdown-to-jsx/",\
+        ["npm:7.1.8", {\
+          "packageLocation": "./.yarn/cache/markdown-to-jsx-npm-7.1.8-51a9bc0852-4823f90e8b.zip/node_modules/markdown-to-jsx/",\
           "packageDependencies": [\
-            ["markdown-to-jsx", "npm:7.1.7"]\
+            ["markdown-to-jsx", "npm:7.1.8"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:7.1.7", {\
-          "packageLocation": "./.yarn/__virtual__/markdown-to-jsx-virtual-9a42d50b99/0/cache/markdown-to-jsx-npm-7.1.7-2cb4f4a90f-b2c0ea7d09.zip/node_modules/markdown-to-jsx/",\
+        ["virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:7.1.8", {\
+          "packageLocation": "./.yarn/__virtual__/markdown-to-jsx-virtual-f9777bc7c2/0/cache/markdown-to-jsx-npm-7.1.8-51a9bc0852-4823f90e8b.zip/node_modules/markdown-to-jsx/",\
           "packageDependencies": [\
-            ["markdown-to-jsx", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:7.1.7"],\
+            ["markdown-to-jsx", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:7.1.8"],\
             ["@types/react", null],\
             ["react", "npm:18.2.0"]\
           ],\
