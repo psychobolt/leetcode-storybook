@@ -13,7 +13,6 @@ var findMin = function (nums) {
   var left = 0;
   var right = nums.length - 1;
   var mid;
-  if (nums[left] < nums[right]) return nums[left];
   while (left < right) {
     mid = left + Math.trunc((right - left) / 2);
     if (nums[mid] > nums[right]) {
