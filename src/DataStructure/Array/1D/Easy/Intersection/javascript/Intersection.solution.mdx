@@ -2,23 +2,29 @@ import cloneDeep from 'lodash/fp/cloneDeep.js';
 import memoize from 'lodash/fp/memoize.js';
 import { Meta, Story, Canvas } from '@storybook/addon-docs';
 
-import solution from './intersection.js';
-import code from './intersection.js?raw';
+import solutionHS from './intersectionHashSet.js';
+import solutionBS from './intersectionBinarySearch.js';
+import codeHS from './intersectionHashSet.js?raw';
+import codeBS from './intersectionBinarySearch.js?raw';
 import runTestCase, { cases } from './testCases.js';
 
-export const c0 = cases[0];
-export const printOutput = memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0))));
+export const c0 = cases[4];
+export const printOutput = solution => memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0))))
+export const printOutputHS = printOutput(solutionHS);
+export const printOutputBS = printOutput(solutionBS);
 
 <Meta title="Data Structure/Array/1D/Easy/[349] Intersection of Two Arrays/Solution/Javascript" />
 
 # Solution
 
-Modify the solution file `./intersection.es3.cjs` to test results.
-
 ## Default Case
 
+### Hash Set
+
+Modify the solution file `./intersectionHashSet.js` to test results.
+
 <Canvas withSource="open">
-  <Story name="Case 0" parameters={{ docs: { source: { code } } }}>
+  <Story name="Case 0 (Hash Set)" parameters={{ docs: { source: { code: codeHS } } }}>
     <div>
       <div>Input: </div>
       <pre>{JSON.stringify(c0.input)}</pre>
@@ -26,7 +32,25 @@ Modify the solution file `./intersection.es3.cjs` to test results.
     <br />
     <div>
       <div>Output: </div>
-      <pre>{printOutput()}</pre>
+      <pre>{printOutputHS()}</pre>
+    </div>
+  </Story>
+</Canvas>
+
+### Binary Search
+
+Modify the solution file `./intersectionBinarySearch.es3.cjs` to test results.
+
+<Canvas withSource="open">
+  <Story name="Case 0 (Binary Search)" parameters={{ docs: { source: { code: codeBS } } }}>
+    <div>
+      <div>Input: </div>
+      <pre>{JSON.stringify(c0.input)}</pre>
+    </div>
+    <br />
+    <div>
+      <div>Output: </div>
+      <pre>{printOutputBS()}</pre>
     </div>
   </Story>
 </Canvas>
