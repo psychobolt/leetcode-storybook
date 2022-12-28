@@ -5,10 +5,10 @@
  */
 
 // @lc code=start
-const contains = function (nums, target) {
-  let left = 0;
-  let right = nums.length - 1;
-  let mid;
+var contains = function (nums, target) {
+  var left = 0;
+  var right = nums.length - 1;
+  var mid;
   while (left < right) {
     mid = left + Math.trunc((right - left) / 2);
     if (nums[mid] === target) {
@@ -23,30 +23,30 @@ const contains = function (nums, target) {
   return nums[left] === target;
 };
 
+var cmp = (x, y) => x - y;
+
 /**
  * @param {number[]} nums1
  * @param {number[]} nums2
  * @return {number[]}
  */
-const intersection = function (nums1, nums2) {
-  let a;
-  let b;
-  const result = new Set();
+var intersection = function (nums1, nums2) {
+  var temp;
+  var result = [];
   if (nums1.length < nums2.length) {
-    a = nums1;
-    b = nums2;
-  } else {
-    a = nums2;
-    b = nums1;
+    temp = nums1;
+    nums1 = nums2;
+    nums2 = temp;
   }
-  b.sort((x, y) => x - y);
-  a.forEach(num => {
-    if (contains(b, num)) {
-      result.add(num);
+  nums1.sort(cmp);
+  nums2.sort(cmp);
+  nums1.forEach(num => {
+    if (contains(nums2, num) && !contains(result, num)) {
+      result.push(num);
     }
   });
-  return Array.from(result);
+  return result;
 };
 // @lc code=end
 
-export default intersection;
+module.exports = intersection;

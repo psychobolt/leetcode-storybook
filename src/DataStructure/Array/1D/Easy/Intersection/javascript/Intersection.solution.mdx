@@ -3,12 +3,12 @@ import memoize from 'lodash/fp/memoize.js';
 import { Meta, Story, Canvas } from '@storybook/addon-docs';
 
 import solutionHS from './intersectionHashSet.js';
-import solutionBS from './intersectionBinarySearch.js';
+import solutionBS from './intersectionBinarySearch.es3.cjs';
 import codeHS from './intersectionHashSet.js?raw';
-import codeBS from './intersectionBinarySearch.js?raw';
+import codeBS from './intersectionBinarySearch.es3.cjs?raw';
 import runTestCase, { cases } from './testCases.js';
 
-export const c0 = cases[0];
+export const c0 = cases[5];
 export const printOutput = solution => memoize(() => JSON.stringify(runTestCase(solution, cloneDeep(c0))))
 export const printOutputHS = printOutput(solutionHS);
 export const printOutputBS = printOutput(solutionBS);

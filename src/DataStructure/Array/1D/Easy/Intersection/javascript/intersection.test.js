@@ -1,5 +1,5 @@
 import solutionHS from './intersectionHashSet.js';
-import solutionBS from './intersectionBinarySearch.js';
+import solutionBS from './intersectionBinarySearch.es3.cjs';
 import runTestCase, { cases } from './testCases.js';
 
 test.each(cases.map(c => [c.name, c]))(
