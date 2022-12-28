@@ -33,6 +33,7 @@ var cmp = (x, y) => x - y;
 var intersection = function (nums1, nums2) {
   var temp;
   var result = [];
+  var i;
   if (nums1.length < nums2.length) {
     temp = nums1;
     nums1 = nums2;
@@ -40,11 +41,11 @@ var intersection = function (nums1, nums2) {
   }
   nums1.sort(cmp);
   nums2.sort(cmp);
-  nums1.forEach(num => {
-    if (contains(nums2, num) && !contains(result, num)) {
-      result.push(num);
+  for (i = 0; i < nums1.length; i += 1) {
+    if (contains(nums2, nums1[i]) && !contains(result, nums1[i])) {
+      result.push(nums1[i]);
     }
-  });
+  }
   return result;
 };
 // @lc code=end
