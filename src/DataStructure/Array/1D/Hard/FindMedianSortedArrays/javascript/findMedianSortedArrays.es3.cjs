@@ -31,7 +31,7 @@ var findMedianSortedArrays = function (nums1, nums2) {
       right = mid;
     }
   }
-  return left; //; right - nums1.length;
+  return left; // ; right - nums1.length;
 };
 // @lc code=end
 
