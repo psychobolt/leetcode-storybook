@@ -73,7 +73,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/testing-react", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:1.3.0"],\
             ["@storybook/theming", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:6.5.15"],\
             ["@testing-library/react", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:13.4.0"],\
-            ["@yarnpkg/sdks", "npm:3.0.0-rc.29"],\
+            ["@yarnpkg/sdks", "npm:3.0.0-rc.36"],\
             ["app-root-path", "npm:3.1.0"],\
             ["babel-loader", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:8.2.5"],\
             ["babel-plugin-macros", "npm:3.1.0"],\
@@ -9516,21 +9516,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@yarnpkg/core", [\
-        ["npm:4.0.0-rc.29", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-core-npm-4.0.0-rc.29-d8fc6f77ed-26d063cdca.zip/node_modules/@yarnpkg/core/",\
+        ["npm:4.0.0-rc.36", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-core-npm-4.0.0-rc.36-f7f0cd6198-c0ed6c9152.zip/node_modules/@yarnpkg/core/",\
           "packageDependencies": [\
-            ["@yarnpkg/core", "npm:4.0.0-rc.29"],\
+            ["@yarnpkg/core", "npm:4.0.0-rc.36"],\
             ["@arcanis/slice-ansi", "npm:1.1.1"],\
             ["@types/semver", "npm:7.3.12"],\
             ["@types/treeify", "npm:1.0.0"],\
-            ["@yarnpkg/fslib", "npm:3.0.0-rc.29"],\
-            ["@yarnpkg/libzip", "virtual:d8fc6f77ed98416f092c1a829b1c4a93ffa2b0b340c92ed6b11dbbd4499ed12a4494eeebeacaa0610db27820cb3f427b46b9edd906953607a4da5998989421b3#npm:3.0.0-rc.29"],\
-            ["@yarnpkg/parsers", "npm:3.0.0-rc.29"],\
-            ["@yarnpkg/shell", "npm:4.0.0-rc.29"],\
+            ["@yarnpkg/fslib", "npm:3.0.0-rc.36"],\
+            ["@yarnpkg/libzip", "virtual:f7f0cd6198febb8afd6fd109b8fe674c4e566613b9d872bca4c9bc9a5869b192c99d4501dc99a86c8676eb6477dcd748c7e01396eb05fbe128a1c8115cd2532d#npm:3.0.0-rc.36"],\
+            ["@yarnpkg/parsers", "npm:3.0.0-rc.36"],\
+            ["@yarnpkg/shell", "npm:4.0.0-rc.36"],\
             ["camelcase", "npm:5.3.1"],\
             ["chalk", "npm:3.0.0"],\
             ["ci-info", "npm:3.4.0"],\
-            ["clipanion", "virtual:0d701bfcb26af355f3085d573639e279f4aac2649988b3f5036633a26f75b931f5cfe65083bc713932bc01f6e2a3920e5e74d0e73926c85dbb9642d52c50e652#npm:3.2.0-rc.12"],\
+            ["clipanion", "virtual:3344b7bea6b783a7d6dbb3288c45efdc06fc6a1b7beeedcf0913b0be5c0c79fe8c318635469e59d076782236ac6785d8fd9b249026b17e81399e21869da9a81a#npm:3.2.0-rc.12"],\
             ["cross-spawn", "npm:7.0.3"],\
             ["diff", "npm:5.1.0"],\
             ["globby", "npm:11.1.0"],\
@@ -9550,30 +9550,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@yarnpkg/fslib", [\
-        ["npm:3.0.0-rc.29", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-fslib-npm-3.0.0-rc.29-dee7b1593d-83688f6d41.zip/node_modules/@yarnpkg/fslib/",\
+        ["npm:3.0.0-rc.36", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-fslib-npm-3.0.0-rc.36-44edf51ab3-b7cee54dda.zip/node_modules/@yarnpkg/fslib/",\
           "packageDependencies": [\
-            ["@yarnpkg/fslib", "npm:3.0.0-rc.29"],\
+            ["@yarnpkg/fslib", "npm:3.0.0-rc.36"],\
             ["tslib", "npm:2.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["@yarnpkg/libzip", [\
-        ["npm:3.0.0-rc.29", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-libzip-npm-3.0.0-rc.29-35185739c1-a81f2d8e0f.zip/node_modules/@yarnpkg/libzip/",\
+        ["npm:3.0.0-rc.36", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-libzip-npm-3.0.0-rc.36-9469db746f-40db84c616.zip/node_modules/@yarnpkg/libzip/",\
           "packageDependencies": [\
-            ["@yarnpkg/libzip", "npm:3.0.0-rc.29"]\
+            ["@yarnpkg/libzip", "npm:3.0.0-rc.36"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:d8fc6f77ed98416f092c1a829b1c4a93ffa2b0b340c92ed6b11dbbd4499ed12a4494eeebeacaa0610db27820cb3f427b46b9edd906953607a4da5998989421b3#npm:3.0.0-rc.29", {\
-          "packageLocation": "./.yarn/__virtual__/@yarnpkg-libzip-virtual-717e8d3ca1/0/cache/@yarnpkg-libzip-npm-3.0.0-rc.29-35185739c1-a81f2d8e0f.zip/node_modules/@yarnpkg/libzip/",\
+        ["virtual:f7f0cd6198febb8afd6fd109b8fe674c4e566613b9d872bca4c9bc9a5869b192c99d4501dc99a86c8676eb6477dcd748c7e01396eb05fbe128a1c8115cd2532d#npm:3.0.0-rc.36", {\
+          "packageLocation": "./.yarn/__virtual__/@yarnpkg-libzip-virtual-c3a1df651e/0/cache/@yarnpkg-libzip-npm-3.0.0-rc.36-9469db746f-40db84c616.zip/node_modules/@yarnpkg/libzip/",\
           "packageDependencies": [\
-            ["@yarnpkg/libzip", "virtual:d8fc6f77ed98416f092c1a829b1c4a93ffa2b0b340c92ed6b11dbbd4499ed12a4494eeebeacaa0610db27820cb3f427b46b9edd906953607a4da5998989421b3#npm:3.0.0-rc.29"],\
+            ["@yarnpkg/libzip", "virtual:f7f0cd6198febb8afd6fd109b8fe674c4e566613b9d872bca4c9bc9a5869b192c99d4501dc99a86c8676eb6477dcd748c7e01396eb05fbe128a1c8115cd2532d#npm:3.0.0-rc.36"],\
             ["@types/emscripten", "npm:1.39.6"],\
             ["@types/yarnpkg__fslib", null],\
-            ["@yarnpkg/fslib", "npm:3.0.0-rc.29"],\
+            ["@yarnpkg/fslib", "npm:3.0.0-rc.36"],\
             ["tslib", "npm:2.4.0"]\
           ],\
           "packagePeers": [\
@@ -9584,10 +9584,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@yarnpkg/parsers", [\
-        ["npm:3.0.0-rc.29", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-parsers-npm-3.0.0-rc.29-c6ca409bb8-ddc3f2a54a.zip/node_modules/@yarnpkg/parsers/",\
+        ["npm:3.0.0-rc.36", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-parsers-npm-3.0.0-rc.36-661799e31c-cfaf0d1358.zip/node_modules/@yarnpkg/parsers/",\
           "packageDependencies": [\
-            ["@yarnpkg/parsers", "npm:3.0.0-rc.29"],\
+            ["@yarnpkg/parsers", "npm:3.0.0-rc.36"],\
             ["js-yaml", "npm:3.14.1"],\
             ["tslib", "npm:2.4.0"]\
           ],\
@@ -9595,15 +9595,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@yarnpkg/sdks", [\
-        ["npm:3.0.0-rc.29", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-sdks-npm-3.0.0-rc.29-2b8f5694a2-9ea799c351.zip/node_modules/@yarnpkg/sdks/",\
+        ["npm:3.0.0-rc.36", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-sdks-npm-3.0.0-rc.36-bc1099a760-a0b5176e74.zip/node_modules/@yarnpkg/sdks/",\
           "packageDependencies": [\
-            ["@yarnpkg/sdks", "npm:3.0.0-rc.29"],\
-            ["@yarnpkg/core", "npm:4.0.0-rc.29"],\
-            ["@yarnpkg/fslib", "npm:3.0.0-rc.29"],\
-            ["@yarnpkg/parsers", "npm:3.0.0-rc.29"],\
+            ["@yarnpkg/sdks", "npm:3.0.0-rc.36"],\
+            ["@yarnpkg/core", "npm:4.0.0-rc.36"],\
+            ["@yarnpkg/fslib", "npm:3.0.0-rc.36"],\
+            ["@yarnpkg/parsers", "npm:3.0.0-rc.36"],\
             ["chalk", "npm:3.0.0"],\
-            ["clipanion", "virtual:0d701bfcb26af355f3085d573639e279f4aac2649988b3f5036633a26f75b931f5cfe65083bc713932bc01f6e2a3920e5e74d0e73926c85dbb9642d52c50e652#npm:3.2.0-rc.12"],\
+            ["clipanion", "virtual:3344b7bea6b783a7d6dbb3288c45efdc06fc6a1b7beeedcf0913b0be5c0c79fe8c318635469e59d076782236ac6785d8fd9b249026b17e81399e21869da9a81a#npm:3.2.0-rc.12"],\
             ["comment-json", "npm:2.4.2"],\
             ["lodash", "npm:4.17.21"],\
             ["tslib", "npm:2.4.0"]\
@@ -9612,14 +9612,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@yarnpkg/shell", [\
-        ["npm:4.0.0-rc.29", {\
-          "packageLocation": "./.yarn/cache/@yarnpkg-shell-npm-4.0.0-rc.29-0d701bfcb2-2831c9446d.zip/node_modules/@yarnpkg/shell/",\
+        ["npm:4.0.0-rc.36", {\
+          "packageLocation": "./.yarn/cache/@yarnpkg-shell-npm-4.0.0-rc.36-3344b7bea6-8edac6321b.zip/node_modules/@yarnpkg/shell/",\
           "packageDependencies": [\
-            ["@yarnpkg/shell", "npm:4.0.0-rc.29"],\
-            ["@yarnpkg/fslib", "npm:3.0.0-rc.29"],\
-            ["@yarnpkg/parsers", "npm:3.0.0-rc.29"],\
+            ["@yarnpkg/shell", "npm:4.0.0-rc.36"],\
+            ["@yarnpkg/fslib", "npm:3.0.0-rc.36"],\
+            ["@yarnpkg/parsers", "npm:3.0.0-rc.36"],\
             ["chalk", "npm:3.0.0"],\
-            ["clipanion", "virtual:0d701bfcb26af355f3085d573639e279f4aac2649988b3f5036633a26f75b931f5cfe65083bc713932bc01f6e2a3920e5e74d0e73926c85dbb9642d52c50e652#npm:3.2.0-rc.12"],\
+            ["clipanion", "virtual:3344b7bea6b783a7d6dbb3288c45efdc06fc6a1b7beeedcf0913b0be5c0c79fe8c318635469e59d076782236ac6785d8fd9b249026b17e81399e21869da9a81a#npm:3.2.0-rc.12"],\
             ["cross-spawn", "npm:7.0.3"],\
             ["fast-glob", "npm:3.2.12"],\
             ["micromatch", "npm:4.0.5"],\
@@ -12370,10 +12370,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:0d701bfcb26af355f3085d573639e279f4aac2649988b3f5036633a26f75b931f5cfe65083bc713932bc01f6e2a3920e5e74d0e73926c85dbb9642d52c50e652#npm:3.2.0-rc.12", {\
-          "packageLocation": "./.yarn/__virtual__/clipanion-virtual-d125b32fe3/0/cache/clipanion-npm-3.2.0-rc.12-7316b54503-a49acffb4e.zip/node_modules/clipanion/",\
+        ["virtual:3344b7bea6b783a7d6dbb3288c45efdc06fc6a1b7beeedcf0913b0be5c0c79fe8c318635469e59d076782236ac6785d8fd9b249026b17e81399e21869da9a81a#npm:3.2.0-rc.12", {\
+          "packageLocation": "./.yarn/__virtual__/clipanion-virtual-e784ad90b5/0/cache/clipanion-npm-3.2.0-rc.12-7316b54503-a49acffb4e.zip/node_modules/clipanion/",\
           "packageDependencies": [\
-            ["clipanion", "virtual:0d701bfcb26af355f3085d573639e279f4aac2649988b3f5036633a26f75b931f5cfe65083bc713932bc01f6e2a3920e5e74d0e73926c85dbb9642d52c50e652#npm:3.2.0-rc.12"],\
+            ["clipanion", "virtual:3344b7bea6b783a7d6dbb3288c45efdc06fc6a1b7beeedcf0913b0be5c0c79fe8c318635469e59d076782236ac6785d8fd9b249026b17e81399e21869da9a81a#npm:3.2.0-rc.12"],\
             ["@types/typanion", null],\
             ["typanion", "npm:3.12.0"]\
           ],\
@@ -20249,7 +20249,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/testing-react", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:1.3.0"],\
             ["@storybook/theming", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:6.5.15"],\
             ["@testing-library/react", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:13.4.0"],\
-            ["@yarnpkg/sdks", "npm:3.0.0-rc.29"],\
+            ["@yarnpkg/sdks", "npm:3.0.0-rc.36"],\
             ["app-root-path", "npm:3.1.0"],\
             ["babel-loader", "virtual:d4a5957575569323f8eb382251176973d8e8a72bb71a94c739d26bf337b22a7f4ad8dbdb13163266ce3c051b57baeae094adda7497f6937588dc4ae79d522a41#npm:8.2.5"],\
             ["babel-plugin-macros", "npm:3.1.0"],\
@@ -29913,6 +29913,7 @@ const StringDecoder = require('string_decoder');
 const url = require('url');
 const os = require('os');
 const nodeUtils = require('util');
+const readline = require('readline');
 const assert = require('assert');
 const stream = require('stream');
 const zlib = require('zlib');
@@ -33825,6 +33826,12 @@ class FileHandle {
     } finally {
       this[kUnref]();
     }
+  }
+  readLines(options) {
+    return readline.createInterface({
+      input: this.createReadStream(options),
+      crlfDelay: Infinity
+    });
   }
   async stat(opts) {
     try {
@@ -38521,6 +38528,9 @@ function getPathForDisplay(p) {
   return npath.normalize(npath.fromPortablePath(p));
 }
 
+const [major, minor] = process.versions.node.split(`.`).map((value) => parseInt(value, 10));
+const WATCH_MODE_MESSAGE_USES_ARRAYS = major > 19 || major === 19 && minor >= 2;
+
 const builtinModules = new Set(require$$0.Module.builtinModules || Object.keys(process.binding(`natives`)));
 const isBuiltinModule = (request) => request.startsWith(`node:`) || builtinModules.has(request);
 function readPackageScope(checkPath) {
@@ -38555,13 +38565,19 @@ Instead change the require of ${basename} in ${parentPath} to a dynamic import()
   err.code = `ERR_REQUIRE_ESM`;
   return err;
 }
-
-const shouldReportRequiredModules = process.env.WATCH_REPORT_DEPENDENCIES;
-function reportModuleToWatchMode(filename) {
-  if (shouldReportRequiredModules && process.send) {
-    process.send({ "watch:require": npath.fromPortablePath(VirtualFS.resolveVirtual(npath.toPortablePath(filename))) });
+function reportRequiredFilesToWatchMode(files) {
+  if (process.env.WATCH_REPORT_DEPENDENCIES && process.send) {
+    files = files.map((filename) => npath.fromPortablePath(VirtualFS.resolveVirtual(npath.toPortablePath(filename))));
+    if (WATCH_MODE_MESSAGE_USES_ARRAYS) {
+      process.send({ "watch:require": files });
+    } else {
+      for (const filename of files) {
+        process.send({ "watch:require": filename });
+      }
+    }
   }
 }
+
 function applyPatch(pnpapi, opts) {
   const defaultCache = {};
   let enableNativeHooks = true;
@@ -38621,7 +38637,7 @@ function applyPatch(pnpapi, opts) {
     }
     const module = new require$$0.Module(modulePath, parent != null ? parent : void 0);
     module.pnpApiPath = moduleApiPath;
-    reportModuleToWatchMode(modulePath);
+    reportRequiredFilesToWatchMode([modulePath]);
     entry.cache[modulePath] = module;
     if (isMain) {
       process.mainModule = module;
@@ -39979,6 +39995,7 @@ Required by: ${issuerLocator.name}@${issuerLocator.reference} (via ${issuerForDi
     if (qualifiedPath) {
       return ppath.normalize(qualifiedPath);
     } else {
+      reportRequiredFilesToWatchMode(candidates.map((candidate) => npath.fromPortablePath(candidate)));
       const unqualifiedPathForDisplay = getPathForDisplay(unqualifiedPath);
       const containingPackage = findPackageLocator(unqualifiedPath);
       if (containingPackage) {
