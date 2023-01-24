@@ -721,6 +721,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$719": {
+        "path": "DataStructure/Array/1D/Hard",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
