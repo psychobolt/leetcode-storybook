@@ -1,7 +1,7 @@
 import solution from './lengthOfLongestSubstring.js';
-import runTestCase, { cases } from './testCases.js';
+import runTestCase, { cases } from '../testCases.js';
 
 test.each(cases.map(c => [c.name, c]))(
-  '[Data Structure/Hash Map/Medium/[3] Longest Substring Without Repeating Characters] - Case %#',
+  '[Data Structure/Hash Map/Medium/[3] Longest Substring Without Repeating Characters/Hash Map - Case %#',
   (name, testCase) => expect(runTestCase(solution, testCase)).toEqual(testCase.expected),
 );
