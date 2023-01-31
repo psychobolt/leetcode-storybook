@@ -13,7 +13,7 @@ const lengthOfLongestSubstring = function (s) {
   const set = new Set();
   let max = 0;
   for (
-    let left = 0, right = 0; right < s.length; right += 1, max = Math.max(max, right - left + 1)
+    let left = 0, right = 0; right < s.length; right += 1, max = Math.max(max, right - left)
   ) {
     const c = s.charAt(right);
     while (set.has(c)) {
