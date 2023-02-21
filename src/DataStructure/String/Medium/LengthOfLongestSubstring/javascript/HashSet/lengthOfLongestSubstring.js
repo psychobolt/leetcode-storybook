@@ -20,7 +20,7 @@ const lengthOfLongestSubstring = function (s) {
       set.delete(s.charAt(left));
       left += 1;
     }
-    set.add(s.charAt(right));
+    set.add(c);
   }
   return max;
 };
