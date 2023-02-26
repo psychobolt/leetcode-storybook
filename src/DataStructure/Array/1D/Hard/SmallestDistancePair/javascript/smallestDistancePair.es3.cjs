@@ -15,14 +15,23 @@ var smallestDistancePair = function (nums, k) {
   var hi;
   var mid;
 
-  var good = function (target) { // eslint-disable-line 
+  var good = function (target) {
     var count = 0;
+    var i = 0;
+    var j = 1;
+    while (i < nums.length) {
+      while (j < nums.length && nums[j] - nums[i] <= target) {
+        j += 1;
+      }
+      count += j - i - 1; // n - 1 pairs
+      i += 1;
+    }
     return count >= k;
   };
 
-  nums.sort();
-  lo = nums[0];
-  hi = nums[nums.length - 1];
+  nums.sort((a, b) => a - b);
+  lo = 0;
+  hi = nums[nums.length - 1] - nums[0];
 
   while (lo < hi) {
     mid = Math.floor((lo + hi) / 2);
@@ -33,7 +42,7 @@ var smallestDistancePair = function (nums, k) {
     }
   }
 
-  return lo;
+  return lo; // kth smallest distance
 };
 // @lc code=end
 
