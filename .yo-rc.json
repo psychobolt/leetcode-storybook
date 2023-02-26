@@ -739,6 +739,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$2006": {
+        "path": "DataStructure/Array/1D/Easy",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
