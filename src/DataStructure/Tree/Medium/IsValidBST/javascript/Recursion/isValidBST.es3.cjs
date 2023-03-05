@@ -6,8 +6,11 @@
 
 // @lc code=start
 
-var isLessThan;
-var isMoreThan;
+var helper = function (root, min, max) {
+  if (root === null) return true;
+  if (!(min < root.val && root.val < max)) return false;
+  return helper(root.left, min, root.val) && helper(root.right, root.val, max);
+};
 
 /**
  * Definition for a binary tree node.
@@ -22,19 +25,7 @@ var isMoreThan;
  * @return {boolean}
  */
 var isValidBST = function (root) {
-  if (root === null) return true;
-  return isLessThan(root.val, root.left) && isValidBST(root.left)
-      && isMoreThan(root.val, root.right) && isValidBST(root.right);
-};
-
-isLessThan = function (val, root) {
-  if (root === null) return true;
-  return root.val < val && isLessThan(val, root.left) && isLessThan(val, root.right);
-};
-
-isMoreThan = function (val, root) {
-  if (root === null) return true;
-  return root.val > val && isMoreThan(val, root.left) && isMoreThan(val, root.right);
+  return helper(root, Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
 };
 
 // @lc code=end
