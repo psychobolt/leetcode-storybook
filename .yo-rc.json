@@ -757,6 +757,12 @@
         "languages": [
           "javascript"
         ]
+      },
+      "$74": {
+        "path": "DataStructure/Array/2D/Medium",
+        "languages": [
+          "javascript"
+        ]
       }
     }
   }
