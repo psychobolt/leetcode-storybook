@@ -29,7 +29,7 @@
     "@babel/preset-react": "7.18.6",
     "@datastructures-js/queue": "4.2.3",
     "@geometricpanda/storybook-addon-badges": "0.2.2",
-    "@mdx-js/react": "1.6.22",
+    "@mdx-js/react": "3.1.0",
     "@storybook/addon-actions": "6.5.16",
     "@storybook/addon-docs": "6.5.16",
     "@storybook/addon-essentials": "6.5.16",
