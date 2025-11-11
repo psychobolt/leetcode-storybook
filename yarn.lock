@@ -13997,6 +13997,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"isbinaryfile@npm:5.0.7":
+  version: 5.0.7
+  resolution: "isbinaryfile@npm:5.0.7"
+  checksum: a5842bbac01aaf57daaaba221bed5bad5c1a10f27e8a30630c16b15743b3df14915e7845d091cecf9d82534c390207e9d5a3ec32a4f330fa7abe07174b53d0fd
+  languageName: node
+  linkType: hard
+
 "isbinaryfile@npm:^4.0.10, isbinaryfile@npm:^4.0.8":
   version: 4.0.10
   resolution: "isbinaryfile@npm:4.0.10"
@@ -15284,7 +15291,7 @@ __metadata:
     flow-typed: 3.8.0
     generator-leetcode-storybook: 0.0.12
     http-server: 14.1.1
-    isbinaryfile: 5.0.0
+    isbinaryfile: 5.0.7
     jest: 27.5.1
     jest-specific-snapshot: 5.0.0
     lodash: 4.17.21
